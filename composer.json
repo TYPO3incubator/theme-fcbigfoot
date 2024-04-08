@@ -55,7 +55,8 @@
         "typo3/cms-seo": "dev-main",
         "typo3/cms-setup": "dev-main",
         "typo3/cms-tstemplate": "dev-main",
-        "vlucas/phpdotenv": "^5.6"
+        "vlucas/phpdotenv": "^5.6",
+        "surfcamp-team4/football": "@dev"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"

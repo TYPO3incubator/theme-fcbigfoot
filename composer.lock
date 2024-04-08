@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f53de3fefb3211552e74f9fbbd206e13",
+    "content-hash": "4cd31c94c86f95d401ec3d7a9c571d72",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2246,6 +2246,42 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "surfcamp-team4/football",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "local_packages/football",
+                "reference": "8efd310de8d7bf6fc593b89de1d88aecd224cb30"
+            },
+            "require": {
+                "typo3/cms-core": "^13.0",
+                "typo3/cms-fluid-styled-content": "^13.0",
+                "typo3/cms-rte-ckeditor": "^13.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "football"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SurfcampTeam4\\Football\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Football club",
+            "homepage": "https://surfcamp.typo3.com/",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
@@ -5098,12 +5134,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/backend.git",
-                "reference": "6c066ff57ddb0ef58814d841560963e483130fc1"
+                "reference": "d36726b11a115c09c127944d4442a93eddab3a1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/6c066ff57ddb0ef58814d841560963e483130fc1",
-                "reference": "6c066ff57ddb0ef58814d841560963e483130fc1",
+                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/d36726b11a115c09c127944d4442a93eddab3a1e",
+                "reference": "d36726b11a115c09c127944d4442a93eddab3a1e",
                 "shasum": ""
             },
             "require": {
@@ -5172,7 +5208,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-07T10:03:59+00:00"
+            "time": "2024-04-07T12:04:18+00:00"
         },
         {
             "name": "typo3/cms-belog",
@@ -5919,6 +5955,67 @@
             "time": "2024-04-07T09:49:20+00:00"
         },
         {
+            "name": "typo3/cms-fluid-styled-content",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/fluid_styled_content.git",
+                "reference": "8dfa81a6b7677ca0aff813d9e2b1d00accb1b9ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/fluid_styled_content/zipball/8dfa81a6b7677ca0aff813d9e2b1d00accb1b9ef",
+                "reference": "8dfa81a6b7677ca0aff813d9e2b1d00accb1b9ef",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "13.1.*@dev",
+                "typo3/cms-fluid": "13.1.*@dev",
+                "typo3/cms-frontend": "13.1.*@dev"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "13.1.x-dev"
+                },
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "fluid_styled_content"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\FluidStyledContent\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Fluid Styled Content - Fluid templates for TYPO3 content elements.",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-fluid-styled-content/main/en-us",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2024-03-07T17:48:11+00:00"
+        },
+        {
             "name": "typo3/cms-form",
             "version": "dev-main",
             "source": {
@@ -5991,12 +6088,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/frontend.git",
-                "reference": "e64616d928b0fc22c27c2f1a10c98934796fa731"
+                "reference": "8c9f49b2c1ce1f57793f05dab3f4db2433074201"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/e64616d928b0fc22c27c2f1a10c98934796fa731",
-                "reference": "e64616d928b0fc22c27c2f1a10c98934796fa731",
+                "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/8c9f49b2c1ce1f57793f05dab3f4db2433074201",
+                "reference": "8c9f49b2c1ce1f57793f05dab3f4db2433074201",
                 "shasum": ""
             },
             "require": {
@@ -6049,7 +6146,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-07T09:49:20+00:00"
+            "time": "2024-04-07T17:26:46+00:00"
         },
         {
             "name": "typo3/cms-info",
@@ -7555,6 +7652,7 @@
         "typo3/cms-seo": 20,
         "typo3/cms-setup": 20,
         "typo3/cms-tstemplate": 20,
+        "surfcamp-team4/football": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
