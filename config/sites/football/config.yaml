@@ -1,4 +1,4 @@
-base: 'https://team3.surfcamp.typo3.com/'
+base: 'https://team4.surfcamp.typo3.com/'
 baseVariants:
   -
     base: 'https://surfcamp-team4.ddev.site/'
