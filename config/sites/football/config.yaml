@@ -1,0 +1,30 @@
+base: 'https://team3.surfcamp.typo3.com/'
+baseVariants:
+  -
+    base: 'https://surfcamp-team4.ddev.site/'
+    condition: "applicationContext == 'Development/DDEV'"
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    locale: en_US.UTF-8
+    navigationTitle: English
+    flag: us
+  -
+    title: German
+    enabled: true
+    locale: de_DE
+    hreflang: ''
+    base: /de/
+    websiteTitle: ''
+    navigationTitle: Deutsch
+    fallbackType: strict
+    fallbacks: ''
+    flag: de
+    languageId: 1
+rootPageId: 1
+websiteTitle: 'FC Bigfoot'
+dependencies:
+  - surfcamp-team4/football
