@@ -1,0 +1,7 @@
+version: '3.6'
+
+services:
+  web:
+    environment:
+      - PHP_IDE_CONFIG=serverName=surfcamp-team4.ddev.site
+      - TYPO3_CONTEXT=Development/DDEV
