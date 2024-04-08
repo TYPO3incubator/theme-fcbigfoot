@@ -11,4 +11,11 @@ page.10 {
     settings {
         headerLogo = {$page.headerLogo}
     }
+    dataProcessing {
+        10 = menu
+        10 {
+            levels = 2
+            as = mainMenu
+        }
+    }
 }
