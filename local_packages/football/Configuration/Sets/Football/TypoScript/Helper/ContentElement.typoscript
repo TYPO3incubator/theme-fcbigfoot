@@ -1,0 +1,15 @@
+# Default configuration for content elements which are using FLUIDTEMPLATE directly
+lib.contentElement >
+lib.contentElement = FLUIDTEMPLATE
+lib.contentElement {
+  templateName = Default
+  templateRootPaths {
+    0 = EXT:football/Resources/Private/Templates/
+  }
+  partialRootPaths {
+    0 = EXT:football/Resources/Private/Partials/
+  }
+  layoutRootPaths {
+    0 = EXT:football/Resources/Private/Layouts/
+  }
+}
