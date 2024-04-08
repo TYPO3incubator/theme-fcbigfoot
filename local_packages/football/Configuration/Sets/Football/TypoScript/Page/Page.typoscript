@@ -1,0 +1,21 @@
+page = PAGE
+page.10 = PAGEVIEW
+page.10 {
+  paths{
+    100 = EXT:football/Resources/Private/Templates/
+  }
+  variables {
+    parentPageTitle = TEXT
+    parentPageTitle.data = levelfield:-1:title
+  }
+  settings {
+    headerLogo = {$page.headerLogo}
+  }
+  dataProcessing {
+    10 = menu
+    10 {
+      levels = 2
+      as = mainMenu
+    }
+  }
+}
