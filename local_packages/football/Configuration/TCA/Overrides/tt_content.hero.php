@@ -1,27 +1,38 @@
 <?php
+declare(strict_types=1);
 
-$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items']['3']['label'] =
-    'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:title';
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-$temporaryColumns = [
-    'button_link' => [
-        'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:button_link',
-        'config' => [
-            'type' => 'input',
-            'renderType' => 'inputLink',
-            'size' => 50,
-            'eval' => 'trim',
+call_user_func(static function() {
+    ExtensionManagementUtility::addTcaSelectItem(
+        'tt_content',
+        'CType',
+        [
+            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:title',
+            'value' => 'hero',
+            'icon' => 'mimetypes-x-content-text',
+        ]
+    );
+
+    $temporaryColumns = [
+        'button_link' => [
+            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:button_link',
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputLink',
+                'size' => 50,
+                'eval' => 'trim',
+            ],
         ],
-    ],
-];
+    ];
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
-    'tt_content',
-    $temporaryColumns
-);
+    ExtensionManagementUtility::addTCAcolumns(
+        'tt_content',
+        $temporaryColumns
+    );
 
-$GLOBALS['TCA']['tt_content']['types']['image'] = [
-    'showitem' => '
+    $GLOBALS['TCA']['tt_content']['types']['hero'] = [
+        'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
@@ -45,4 +56,5 @@ $GLOBALS['TCA']['tt_content']['types']['image'] = [
             rowDescription,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
-];
+    ];
+});
