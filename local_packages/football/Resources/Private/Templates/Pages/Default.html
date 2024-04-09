@@ -10,4 +10,17 @@
 
     <f:cObject typoscriptObjectPath="lib.content" data="0"></f:cObject>
 
+
+    <footer>
+        <f:if condition="{footer.0.data.data_privacy}">
+            <f:link.typolink parameter="{footer.0.data.data_privacy}" />
+        </f:if>
+        <f:if condition="{footer.0.data.copyright}">
+            {footer.0.data.copyright}
+        </f:if>
+        <f:for each="{footer.0.socials}" as="socials">
+            <f:link.typolink parameter="{socials.data.url}">{socials.data.icon}</f:link.typolink>
+        </f:for>
+    </footer>
+
 </f:section>
