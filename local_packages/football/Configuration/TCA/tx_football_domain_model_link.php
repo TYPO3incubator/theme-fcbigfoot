@@ -1,12 +1,12 @@
 <?php
 
 $ext = 'football';
-$type = 'tx_football_domain_model_link';
-$langDB = 'LLL:EXT:' . $ext . '/Resources/Private/Language/locallang_db.xlf';
+$table = 'tx_football_domain_model_link';
+$dbLangFile = 'LLL:EXT:' . $ext . '/Resources/Private/Language/locallang_db.xlf';
 
 return [
     'ctrl' => [
-        'title' => $langDB . ':' . $type,
+        'title' => $dbLangFile . ':' . $table,
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -25,7 +25,7 @@ return [
     'columns' => [
         'url' => [
             'exclude' => true,
-            'label' => $langDB . ':' . $type . '.url',
+            'label' => $dbLangFile . ':' . $table . '.url',
             'config' => [
                 'type' => 'link',
                 'eval' => 'trim',
@@ -34,7 +34,7 @@ return [
         ],
         'title' => [
             'exclude' => true,
-            'label' => $langDB . ':' . $type . '.title',
+            'label' => $dbLangFile . ':' . $table . '.title',
             'config' => [
                 'type' => 'input',
                 'eval' => 'trim',
@@ -43,13 +43,13 @@ return [
         ],
         'icon' => [
             'exclude' => true,
-            'label' => $langDB . ':' . $type . '.icon',
+            'label' => $dbLangFile . ':' . $table . '.icon',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     [
-                        'label' => 'Select'
+                        'label' => $dbLangFile . ':' . $table . '.icon.select',
                     ],
                     [
                         'label' => 'Discord',

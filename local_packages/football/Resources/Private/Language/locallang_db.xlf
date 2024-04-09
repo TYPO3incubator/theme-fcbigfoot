@@ -37,6 +37,9 @@
             <trans-unit id="tx_football_domain_model_link.icon">
                 <source>Icon</source>
             </trans-unit>
+            <trans-unit id="tx_football_domain_model_link.icon.select">
+                <source>Select</source>
+            </trans-unit>
             <!--- END: tx_football_domain_model_link -->
         </body>
     </file>
