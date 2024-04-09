@@ -27,20 +27,24 @@ call_user_func(function () {
         'tt_content',
         'CType',
         [
-            $languageFile . ':title',
-            $cType,
-            'actions-dice',
+            'label' => $languageFile . ':title',
+            'value' => $cType,
+            'icon' => 'actions-dice',
+            'group' => 'common',
+            'description' => $languageFile . ':description',
         ],
-        'text',
-        'before'
     );
+
+    // add the icon to the typeicon_class
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes'][$cType] = 'actions-dice';
 
     // Configure the default backend fields for the content element
     $GLOBALS['TCA']['tt_content']['types'][$cType] = [
         'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 --palette--;;general,
-                --palette--;;headers,
+                --linebreak--,header,
+                --linebreak--,file_link,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:appearance,
                 --palette--;;frames,
                 --palette--;;appearanceLinks,
@@ -55,5 +59,10 @@ call_user_func(function () {
                 rowDescription,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
         ',
+        'columnsOverrides' => [
+            'file_link' => [
+                'label' => $languageFile . ':file_link',
+            ],
+        ]
     ];
 });

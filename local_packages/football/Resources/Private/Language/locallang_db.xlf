@@ -24,6 +24,12 @@
             </trans-unit>
             <!--- END: pages -->
 
+            <!--- BEGIN: tt_content -->
+            <trans-unit id="tt_content.file_link">
+                <source>File Link</source>
+            </trans-unit>
+            <!--- END: tt_content -->
+
             <!--- BEGIN: tx_football_domain_model_link -->
             <trans-unit id="tx_football_domain_model_link">
                 <source>Link</source>

@@ -10,7 +10,10 @@
                 <source>Game Results</source>
             </trans-unit>
             <trans-unit id="description">
-                <source>Get Results of your team</source>
+                <source>Get Results for your team</source>
+            </trans-unit>
+            <trans-unit id="file_link">
+                <source>Link to JSON-File</source>
             </trans-unit>
         </body>
     </file>
