@@ -1,12 +1,15 @@
-mod.wizards.newContentElement.wizardItems.football {
-    elements {
-        form {
-            iconIdentifier = actions-dice
-            title = LLL:EXT:football/Resources/Private/Language/ContentElements/game_results.xlf:title
-            description = LLL:EXT:football/Resources/Private/Language/ContentElements/game_results.xlf:description
-            tt_content_defValues {
-                CType = game_results
-            }
-        }
-    }
+mod.wizards.newContentElement.wizardItems {
+   common {
+       elements {
+           game_results {
+               iconIdentifier = actions-dice
+               title = LLL:EXT:football/Resources/Private/Language/ContentElements/game_results.xlf:title
+               description = LLL:EXT:football/Resources/Private/Language/ContentElements/game_results.xlf:description
+               tt_content_defValues {
+                   CType = game_results
+               }
+           }
+       }
+       show := addToList(game_results)
+   }
 }
