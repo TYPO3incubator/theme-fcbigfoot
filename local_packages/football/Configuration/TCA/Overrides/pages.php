@@ -21,8 +21,10 @@ call_user_func(function()
             'label' => 'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:pages.copyright',
             'displayCond' => 'FIELD:is_siteroot:REQ:true',
             'config' => [
-                'type' => 'input',
-                'size' => 100
+                'type' => 'text',
+                'rows' => 1,
+                'cols' => 50,
+                'eval' => 'trim',
             ],
         ],
         'social' => [
