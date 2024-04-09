@@ -39,6 +39,14 @@ call_user_func(static function() {
                 'eval' => 'trim',
             ],
         ],
+        'image' => [
+            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:image',
+            'config' => [
+                'type' => 'file',
+                'minitems' => 1,
+                'allowed' => 'common-image-types'
+            ],
+        ],
     ];
 
     ExtensionManagementUtility::addTCAcolumns(
@@ -51,13 +59,9 @@ call_user_func(static function() {
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
+            image,
             button_text,
             button_link,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:images,
-            image,
-            --palette--;;mediaAdjustments,
-            --palette--;;gallerySettings,
-            --palette--;;imagelinks,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
