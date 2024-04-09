@@ -57,6 +57,18 @@
             </trans-unit>
             <!--- END: tx_football_domain_model_link -->
 
+            <!--- BEGIN: tx_football_domain_model_button -->
+            <trans-unit id="tx_football_domain_model_button">
+                <source>Button</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_button.text">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_button.link">
+                <source>Link</source>
+            </trans-unit>
+            <!--- END: tx_football_domain_model_button -->
+
             <!-- BEGIN: tx_football_domain_model_sponsor -->
             <trans-unit id="tx_football_domain_model_sponsor">
                 <source>Sponsor</source>

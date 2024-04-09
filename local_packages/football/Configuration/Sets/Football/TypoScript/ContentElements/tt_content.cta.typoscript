@@ -1,0 +1,6 @@
+tt_content {
+  cta =< lib.contentElement
+  cta {
+    templateName = CTA
+  }
+}

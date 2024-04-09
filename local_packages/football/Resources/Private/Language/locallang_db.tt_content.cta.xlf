@@ -7,16 +7,19 @@
         </header>
         <body>
             <trans-unit id="title">
-                <source>Hero</source>
+                <source>CTA</source>
             </trans-unit>
             <trans-unit id="description">
-                <source>Add a new hero content element</source>
+                <source>Add a new cta content element</source>
             </trans-unit>
             <trans-unit id="button_link">
-                <source>Button link</source>
+                <source>CTA link</source>
             </trans-unit>
             <trans-unit id="button_text">
-                <source>Button text</source>
+                <source>CTA text</source>
+            </trans-unit>
+            <trans-unit id="buttons">
+                <source>Buttons</source>
             </trans-unit>
         </body>
     </file>

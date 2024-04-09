@@ -8,17 +8,29 @@ call_user_func(static function() {
         'tt_content',
         'CType',
         [
-            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:title',
-            'value' => 'hero',
+            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.cta.xlf:title',
+            'value' => 'cta',
             'group' => 'default',
-            'description' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:description',
+            'description' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.cta.xlf:description',
             'icon' => 'mimetypes-x-content-text',
         ]
     );
 
     $temporaryColumns = [
+        'buttons' => [
+            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.cta.xlf:buttons',
+            'config' => [
+                'type' => 'inline',
+                'foreign_table' => 'tx_football_domain_model_button',
+                'appearance' => [
+                    'showSynchronizationLink' => 1,
+                    'showAllLocalizationLink' => 1,
+                    'showPossibleLocalizationRecords' => 1,
+                ],
+            ],
+        ],
         'button_text' => [
-            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:button_text',
+            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.cta.xlf:button_text',
             'config' => [
                 'type' => 'input',
                 'size' =>  50,
@@ -26,7 +38,7 @@ call_user_func(static function() {
             ]
         ],
         'button_link' => [
-            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:button_link',
+            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.cta.xlf:button_link',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputLink',
@@ -41,14 +53,12 @@ call_user_func(static function() {
         $temporaryColumns
     );
 
-    $GLOBALS['TCA']['tt_content']['types']['hero'] = [
+    $GLOBALS['TCA']['tt_content']['types']['cta'] = [
         'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
-            image,
-            button_text,
-            button_link,
+            buttons,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -63,19 +73,5 @@ call_user_func(static function() {
             rowDescription,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
-        'columnsOverrides' => [
-            'header' => [
-                'config' => [
-                    'type' => 'text',
-                    'cols' => 20,
-                    'rows' => 2,
-                ]
-            ],
-            'image' => [
-                'config' => [
-                    'minitems' => '1',
-                ],
-            ],
-        ],
     ];
 });
