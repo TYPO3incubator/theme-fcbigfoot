@@ -17,5 +17,25 @@ page.10 {
       levels = 2
       as = mainMenu
     }
+    20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    20 {
+        table = pages
+        selectFields = data_privacy,copyright,social
+        uidInList.data = site:rootPageId
+        pidInList = 0
+        as = footer
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            10 {
+                table = tx_football_domain_model_link
+                selectFields = url,icon
+                pidInList.data = field:uid
+                where.data = field:uid
+                where.wrapper = parentid=|
+                orderBy = sorting
+                as = socials
+            }
+        }
+    }
   }
 }
