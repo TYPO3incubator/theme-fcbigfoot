@@ -4,12 +4,12 @@ lib.contentElement = FLUIDTEMPLATE
 lib.contentElement {
   templateName = Default
   templateRootPaths {
-    0 = EXT:football/Resources/Private/Templates/
+    0 = EXT:football/Resources/Private/Templates/ContentElements
   }
   partialRootPaths {
-    0 = EXT:football/Resources/Private/Partials/
+    0 = EXT:football/Resources/Private/Templates/ContentElements/Partials
   }
   layoutRootPaths {
-    0 = EXT:football/Resources/Private/Layouts/
+    0 = EXT:football/Resources/Private/Templates/ContentElements/Layouts
   }
 }

@@ -12,6 +12,9 @@
             <trans-unit id="backend_layout.column.normal">
                 <source>Normal</source>
             </trans-unit>
+            <trans-unit id="hero.description">
+                <source>Description</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

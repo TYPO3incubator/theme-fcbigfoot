@@ -1,0 +1,6 @@
+tt_content {
+  hero =< lib.contentElement
+  hero {
+    templateName = Hero
+  }
+}

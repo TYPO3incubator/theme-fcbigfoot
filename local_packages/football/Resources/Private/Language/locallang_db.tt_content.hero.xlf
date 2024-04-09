@@ -6,11 +6,11 @@
             <authorEmail>surfcamp@team4.de</authorEmail>
         </header>
         <body>
-            <trans-unit id="hero.title">
+            <trans-unit id="title">
                 <source>Hero</source>
             </trans-unit>
-            <trans-unit id="hero.description">
-                <source>Create a hero content element</source>
+            <trans-unit id="button_link">
+                <source>Button link</source>
             </trans-unit>
         </body>
     </file>
