@@ -1,0 +1,12 @@
+@mixin headings {
+    @for $index from 1 through 6 {
+        h#{$index} {
+            @content;
+        }
+    }
+}
+
+@include headings {
+    font-family: $font-primary;
+    margin: 0 auto 1rem;
+}

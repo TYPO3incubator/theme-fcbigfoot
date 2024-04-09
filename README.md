@@ -33,6 +33,21 @@ ddev auth ssh
 ddev pull assets
 ```
 
+### Frontend build process
+Run into the root of the project the following command to install gulp (Gulp is used to compile and minify SCSS and JS)
+```sh
+composer install-gulp
+```
+
+Run the following commands to compile SCCS/JS or to watch assets:
+```sh
+composer watch-assets
+composer compile-css
+composer compile-js
+composer compile-assets
+
+```
+
 ### Contributing to the TYPO3 Core
 
 In case the team decides to, or needs to contribute to the TYPO3 core, this project can be "upgraded".

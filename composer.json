@@ -60,5 +60,29 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
+    },
+    "scripts": {
+        "install-gulp": [
+            "npm install --save-dev gulp-install",
+            "npm install gulp-minify-css",
+            "npm install gulp-minify",
+            "npm install gulp-sass",
+            "npm install sass",
+            "npm install gulp-concat-css"
+        ],
+        "watch-assets": [
+            "gulp watch"
+        ],
+        "compile-css": [
+            "gulp scssTask"
+        ],
+        "compile-js": [
+            "gulp jsTask"
+        ],
+        "compile-assets": [
+            "composer add-git-helpers",
+            "composer compile-css",
+            "composer compile-js"
+        ]
     }
 }
