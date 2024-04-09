@@ -15,6 +15,21 @@ call_user_func(static function() {
     );
 
     $temporaryColumns = [
+        'header' => [
+            'config' => [
+                'type' => 'text',
+                'cols' => 20,
+                'rows' => 2,
+            ]
+        ],
+        'button_text' => [
+            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:button_text',
+            'config' => [
+                'type' => 'input',
+                'size' =>  50,
+                'eval' => 'trim'
+            ]
+        ],
         'button_link' => [
             'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:button_link',
             'config' => [
@@ -36,6 +51,7 @@ call_user_func(static function() {
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
+            button_text,
             button_link,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:images,
             image,

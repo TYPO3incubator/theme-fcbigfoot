@@ -12,6 +12,9 @@
             <trans-unit id="button_link">
                 <source>Button link</source>
             </trans-unit>
+            <trans-unit id="button_text">
+                <source>Button text</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

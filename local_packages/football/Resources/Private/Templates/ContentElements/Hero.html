@@ -1,4 +1,15 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<f:section name="Main">
     <h3>{data.header}</h3>
-    <p>...</p>
+    <p>{data.subheader}</p>
+    <span>
+        <f:link.typolink parameter="{data.button_link}">
+            {data.button_text}
+        </f:link.typolink>
+    </span>
+    <f:image src="{data.image}" treatIdAsReference="1" />
+</f:section>
+
 </html>
+
