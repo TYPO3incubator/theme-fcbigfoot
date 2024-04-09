@@ -1,0 +1,6 @@
+tt_content {
+  game_results =< lib.contentElement
+  game_results {
+    templateName = GameResults
+  }
+}
