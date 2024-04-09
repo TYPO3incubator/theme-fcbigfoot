@@ -16,7 +16,7 @@ call_user_func(function () {
                 'allowedTypes' => ['file', 'url'],
                 'appearance' => [
                     'allowedOptions' => [],
-                    'allowedExtensions' => ['json']
+                    'allowedFileExtensions' => ['json']
                 ]
             ]
         ]
