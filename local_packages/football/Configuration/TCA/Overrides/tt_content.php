@@ -13,7 +13,11 @@ call_user_func(function () {
                 'type' => 'link',
                 'eval' => 'trim',
                 'required' => true,
-                'allowedTypes' => ['file', 'url']
+                'allowedTypes' => ['file', 'url'],
+                'appearance' => [
+                    'allowedOptions' => [],
+                    'allowedExtensions' => ['json']
+                ]
             ]
         ]
     ];
