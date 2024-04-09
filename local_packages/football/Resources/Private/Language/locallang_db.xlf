@@ -6,6 +6,20 @@
             <authorEmail>surfcamp@team4.de</authorEmail>
         </header>
         <body>
+            <!--- BEGIN: tx_football_domain_model_link -->
+            <trans-unit id="tx_football_domain_model_link">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_link.url">
+                <source>URL</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_link.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_link.icon">
+                <source>Icon</source>
+            </trans-unit>
+            <!--- END: tx_football_domain_model_link -->
         </body>
     </file>
 </xliff>
