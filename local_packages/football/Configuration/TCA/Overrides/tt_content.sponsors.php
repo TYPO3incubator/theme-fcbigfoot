@@ -10,6 +10,7 @@ call_user_func(static function() {
         [
             'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.sponsors.xlf:title',
             'value' => 'sponsors',
+            'group' => 'special',
             'icon' => 'actions-heart-alt',
         ]
     );
