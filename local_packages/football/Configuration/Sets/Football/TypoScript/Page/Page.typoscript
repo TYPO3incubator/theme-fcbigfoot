@@ -2,7 +2,7 @@ page = PAGE
 page.10 = PAGEVIEW
 page {
   10 {
-    paths{
+    paths {
       100 = EXT:football/Resources/Private/Templates/
     }
 
@@ -10,6 +10,8 @@ page {
       parentPageTitle = TEXT
       parentPageTitle.data = levelfield:-1:title
     }
+
+
     settings {
       headerLogo = {$page.headerLogo}
     }
@@ -19,33 +21,32 @@ page {
         levels = 2
         as = mainMenu
       }
-    }
-    20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-    20 {
+      20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      20 {
         table = pages
         selectFields = data_privacy,copyright,social
         uidInList.data = site:rootPageId
         pidInList = 0
         as = footer
         dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-            10 {
-                table = tx_football_domain_model_link
-                selectFields = url,icon
-                pidInList.data = field:uid
-                where = parentid = ###pageid### AND parenttable = 'pages'
-                markers {
-                    pageid.data = field:uid
-                }
-                orderBy = sorting
-                as = socials
+          10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+          10 {
+            table = tx_football_domain_model_link
+            selectFields = url,icon
+            pidInList.data = field:uid
+            where = {#parentid} = ###pageid### AND {#parenttable} = 'pages'
+            markers {
+              pageid.data = field:uid
             }
+            orderBy = sorting
+            as = socials
+          }
         }
+      }
     }
-  }
-
-  includeCSS {
-    theme = EXT:football/Resources/Public/Css/index.css
-    rte = EXT:football/Resources/Public/Css/rte.css
+    includeCSS {
+      theme = EXT:football/Resources/Public/Css/index.css
+      rte = EXT:football/Resources/Public/Css/rte.css
+    }
   }
 }
