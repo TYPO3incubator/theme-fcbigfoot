@@ -1,0 +1,15 @@
+TCEFORM.tt_content {
+    header_layout {
+        keepItems = 2,3,4,100
+    }
+    imageorient {
+        keepItems = 25,26
+    }
+    header_position.types.textmedia.disabled = 1
+    date.types.textmedia.disabled = 1
+    imagewidth.types.textmedia.disabled = 1
+    imageheight.types.textmedia.disabled = 1
+    imageborder.types.textmedia.disabled = 1
+    imagecols.types.textmedia.disabled = 1
+    image_zoom.types.textmedia.disabled = 1
+}

@@ -1,0 +1,2 @@
+@import 'EXT:football/Configuration/TsConfig/TCEFORM/*.tsconfig'
+@import 'EXT:football/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts/*.tsconfig'
