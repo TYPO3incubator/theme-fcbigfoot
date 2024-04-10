@@ -7,11 +7,11 @@ $dbLangFile = 'LLL:EXT:' . $ext . '/Resources/Private/Language/locallang_db.xlf'
 return [
     'ctrl' => [
         'title' => $dbLangFile . ':' . $table,
-        'label' => 'title',
+        'label' => 'text',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'sortby' => 'sorting',
-        'searchFields' => 'title, url',
+        'searchFields' => 'text, link',
         'typeicon_classes' => [
             'default' => 'actions-link',
         ],
@@ -27,8 +27,8 @@ return [
             'exclude' => true,
             'label' => $dbLangFile . ':' . $table . '.text',
             'config' => [
-                'type' => 'input',
-                'size' => 30,
+                'type' => 'text',
+                'rows' => 1,
                 'eval' => 'trim'
             ],
         ],
@@ -41,6 +41,7 @@ return [
                 'size' => 30,
                 'max' => 255,
                 'eval' => 'trim',
+                'required' => 1,
                 'renderType' => 'inputLink',
             ],
         ],

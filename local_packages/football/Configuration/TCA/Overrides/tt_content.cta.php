@@ -29,23 +29,6 @@ call_user_func(static function() {
                 ],
             ],
         ],
-        'button_text' => [
-            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.cta.xlf:button_text',
-            'config' => [
-                'type' => 'input',
-                'size' =>  50,
-                'eval' => 'trim'
-            ]
-        ],
-        'button_link' => [
-            'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.cta.xlf:button_link',
-            'config' => [
-                'type' => 'input',
-                'renderType' => 'inputLink',
-                'size' => 50,
-                'eval' => 'trim',
-            ],
-        ],
     ];
 
     ExtensionManagementUtility::addTCAcolumns(

@@ -2,5 +2,13 @@ tt_content {
   cta =< lib.contentElement
   cta {
     templateName = CTA
+    dataProcessing.10 = database-query
+    dataProcessing.10 {
+        if.isTrue.field = buttons
+        table = tx_football_domain_model_button
+        pidInList.field = pid
+        orderBy = uid
+        as = data_buttons
+    }
   }
 }
