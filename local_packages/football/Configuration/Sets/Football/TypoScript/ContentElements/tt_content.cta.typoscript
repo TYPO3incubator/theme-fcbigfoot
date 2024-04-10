@@ -7,6 +7,8 @@ tt_content {
         if.isTrue.field = buttons
         table = tx_football_domain_model_link
         pidInList.field = pid
+        where = {#parentid}=###uid###
+        markers.uid.field = uid
         orderBy = uid
         as = data_buttons
     }
