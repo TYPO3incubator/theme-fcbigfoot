@@ -63,12 +63,7 @@
     },
     "scripts": {
         "install-gulp": [
-            "npm install --save-dev gulp-install",
-            "npm install gulp-minify-css",
-            "npm install gulp-minify",
-            "npm install gulp-sass",
-            "npm install sass",
-            "npm install gulp-concat-css"
+            "npm install"
         ],
         "watch-assets": [
             "gulp watch"
@@ -80,7 +75,6 @@
             "gulp jsTask"
         ],
         "compile-assets": [
-            "composer add-git-helpers",
             "composer compile-css",
             "composer compile-js"
         ]

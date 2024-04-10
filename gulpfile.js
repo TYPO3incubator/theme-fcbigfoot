@@ -4,7 +4,6 @@ const terser = require('gulp-terser');
 const sourcemaps = require('gulp-sourcemaps');
 const {src, dest} = require('gulp');
 const minify = require('gulp-minify');
-const minifyCss = require('gulp-minify-css');
 const {watch} = require('gulp');
 const concatCss = require('gulp-concat-css');
 const sass = require('gulp-sass')(require('sass'));
@@ -57,7 +56,6 @@ function scssTask() {
         }))
         .pipe(sourcemaps.init())
         .pipe(concatCss('index.css'))
-        .pipe(minifyCss())
         .pipe(sourcemaps.write('.'))
         .pipe(dest(themePath + 'Resources/Public/Css/'))
 }
