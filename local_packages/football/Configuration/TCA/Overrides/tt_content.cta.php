@@ -24,6 +24,8 @@ call_user_func(static function() {
                 'foreign_table' => 'tx_football_domain_model_link',
                 'foreign_table_field' => 'parenttable',
                 'foreign_field' => 'parentid',
+                'minitems' => 1,
+                'maxitems' => 2,
                 'appearance' => [
                     'useSortable' => true
                 ],
