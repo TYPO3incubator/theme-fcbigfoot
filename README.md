@@ -34,18 +34,19 @@ ddev pull assets
 ```
 
 ### Frontend build process
-Run into the root of the project the following command to install gulp (Gulp is used to compile and minify SCSS and JS)
+Run into the root of the project the following command to install all required Node dependencies
 ```sh
-composer install-gulp
+ddev composer npm-install
 ```
+
+_(This is also executed automatically after running `composer install`)_
 
 Run the following commands to compile SCCS/JS or to watch assets:
 ```sh
-composer watch-assets
-composer compile-css
-composer compile-js
-composer compile-assets
-
+ddev composer watch-assets
+ddev composer compile-css
+ddev composer compile-js
+ddev composer compile-assets
 ```
 
 ### Contributing to the TYPO3 Core
