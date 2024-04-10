@@ -8,10 +8,14 @@
     <div>
         {result.homeTeam.name} : {result.awayTeam.name}<br />
         <f:format.date date="{result.datetime}" format="d.m.Y" /><br />
-        {result.location}
+        {result.location}<br />
         <f:if condition="{result.result}">
-            <br />
-            {result.result.home} : {result.result.away}
+            <f:then>
+                {result.result.home} : {result.result.away}
+            </f:then>
+            <f:else>
+                not played yet
+            </f:else>
         </f:if>
         <br /><br />
     </div>
