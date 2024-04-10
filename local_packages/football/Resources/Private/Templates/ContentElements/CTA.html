@@ -3,7 +3,7 @@
 <p>{data.subheader}</p>
 <h3>{data.header}</h3>
 
-<f:if condition="{data_buttons -> f:count()} > 1">
+<f:if condition="{data_buttons -> f:count()} >= 1">
     <f:for each="{data_buttons}" as="button">
         <f:link.typolink parameter="{button.data.url}">
             {button.data.title}
