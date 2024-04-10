@@ -36,9 +36,10 @@ return [
             'exclude' => true,
             'label' => $dbLangFile . ':' . $table . '.title',
             'config' => [
-                'type' => 'input',
+                'type' => 'text',
+                'rows' => 1,
+                'cols' => 30,
                 'eval' => 'trim',
-                'size' => 30
             ]
         ],
         'icon' => [
