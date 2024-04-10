@@ -41,6 +41,21 @@
                 <source>Select</source>
             </trans-unit>
             <!--- END: tx_football_domain_model_link -->
+
+            <!-- BEGIN: tx_football_domain_model_sponsor -->
+            <trans-unit id="tx_football_domain_model_sponsor">
+                <source>Sponsor</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_sponsor.url">
+                <source>URL</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_sponsor.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_sponsor.image">
+                <source>Image</source>
+            </trans-unit>
+            <!-- END: tx_football_domain_model_sponsor -->
         </body>
     </file>
 </xliff>
