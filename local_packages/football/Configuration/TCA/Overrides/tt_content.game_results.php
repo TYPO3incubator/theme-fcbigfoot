@@ -1,19 +1,5 @@
 <?php
 
-/*
- *
- * Dieses Programm einschließlich Programmdaten und Dokumentation unterliegt den ausschließlichen Rechten von
- * "queo GmbH", soweit nicht anders gekennzeichnet. Insbesondere jede Vervielfältigung, Verbreitung oder
- * Zugänglichmachung dieses Programms oder Teilen davon sowie die Unterlizenzierung oder Weitergabe bedarf der
- * vorherigen Zustimmung der "queo GmbH" (Lizenz). Unzulässig sind die Bearbeitung oder andere
- * Umarbeitungen des Programms ohne Zustimmung der "queo GmbH". Unberührt bleiben die
- * Rechte nach §§ 69 d) Abs. 2 und 3 sowie e) UrhG. Die Entfernung dieses Rechtehinweises ist untersagt.
- *
- * User: kreitz
- * Date: 19.01.2024
- * Time: 14:15
- */
-
 defined('TYPO3') || die();
 
 call_user_func(function () {
