@@ -9,7 +9,7 @@ tt_content {
         if.isTrue.field = sponsors
         table = tx_football_domain_model_sponsor
         pidInList.field = pid
-        where = parentid=###uid###
+        where = {#parentid}=###uid###
         markers.uid.field = uid
         selectFields = url,title,image
         orderBy = sorting
