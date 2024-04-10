@@ -33,8 +33,10 @@ page {
                 table = tx_football_domain_model_link
                 selectFields = url,icon
                 pidInList.data = field:uid
-                where.data = field:uid
-                where.wrapper = parentid=|
+                where = parentid = ###pageid### AND parenttable = 'pages'
+                markers {
+                    pageid.data = field:uid
+                }
                 orderBy = sorting
                 as = socials
             }
