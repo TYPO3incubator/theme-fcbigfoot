@@ -44,6 +44,7 @@ call_user_func(function () {
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 --palette--;;general,
                 --linebreak--,header,
+                --linebreak--,game_results_mode,
                 --linebreak--,file_link,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:appearance,
                 --palette--;;frames,

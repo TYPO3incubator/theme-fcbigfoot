@@ -8,7 +8,7 @@ call_user_func(function () {
 
     $fields = [
         'file_link' => [
-            'label' => $dbLanguageFile . ':tt_content.file_link',
+            'label' => $dbLanguageFile . ':' . $table . '.file_link',
             'config' => [
                 'type' => 'link',
                 'eval' => 'trim',
@@ -18,6 +18,18 @@ call_user_func(function () {
                     'allowedOptions' => [],
                     'allowedFileExtensions' => ['json']
                 ]
+            ]
+        ],
+        'game_results_mode' => [
+            'label' => $dbLanguageFile . ':' . $table . '.game_results_mode',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [$dbLanguageFile . ':' . $table . '.game_results_mode.slider', 'slider'],
+                    [$dbLanguageFile . ':' . $table . '.game_results_mode.table', 'table']
+                ],
+                'default' => 'slider'
             ]
         ]
     ];

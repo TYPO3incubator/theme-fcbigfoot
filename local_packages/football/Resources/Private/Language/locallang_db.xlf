@@ -28,6 +28,15 @@
             <trans-unit id="tt_content.file_link">
                 <source>File Link</source>
             </trans-unit>
+            <trans-unit id="tt_content.game_results_mode">
+                <source>Output style of data</source>
+            </trans-unit>
+            <trans-unit id="tt_content.game_results_mode.slider">
+                <source>Show results of the latest games (Slider)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.game_results_mode.table">
+                <source>Show all results (Table)</source>
+            </trans-unit>
             <!--- END: tt_content -->
 
             <!--- BEGIN: tx_football_domain_model_link -->
