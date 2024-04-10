@@ -33,12 +33,17 @@ class JsonProcessor implements DataProcessorInterface
         }
         $jsonFile = $cObj->stdWrapValue('jsonFile', $processorConfiguration ?? []);
 
-        $linkFactory = GeneralUtility::makeInstance(LinkFactory::class);
-        // ToDo: Get absolute Uri for file link
-        $jsonFileUrl = $linkFactory->createUri($jsonFile);
+        if (
+            is_string($jsonFile)
+            && $jsonFile != ''
+        ) {
+            $linkFactory = GeneralUtility::makeInstance(LinkFactory::class);
+            // ToDo: Get absolute Uri for file link
+            $jsonFileUrl = $linkFactory->createUri($jsonFile);
 
-        $targetVariableName = $cObj->stdWrapValue('as', $processorConfiguration, 'jsonData');
-        $processedData[$targetVariableName] = json_decode(file_get_contents($jsonFileUrl->getUrl()), true);
+            $targetVariableName = $cObj->stdWrapValue('as', $processorConfiguration, 'jsonData');
+            $processedData[$targetVariableName] = json_decode(file_get_contents($jsonFileUrl->getUrl()), true);
+        }
 
         return $processedData;
     }
