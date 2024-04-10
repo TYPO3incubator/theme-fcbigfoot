@@ -23,6 +23,7 @@ call_user_func(static function() {
                 'foreign_table' => 'tx_football_domain_model_sponsor',
                 'foreign_table_field' => 'parenttable',
                 'foreign_field' => 'parentid',
+                'minitems' => 1,
                 'appearance' => [
                     'useSortable' => true
                 ],
