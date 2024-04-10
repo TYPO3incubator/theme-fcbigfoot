@@ -2,7 +2,19 @@
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 
 <h3>{data.header}</h3>
-<span>{data.file_link}</span>
 <span>{data.game_results_mode}</span>
+
+<f:for each="{results}" as="result">
+    <div>
+        {result.homeTeam.name} : {result.awayTeam.name}<br />
+        <f:format.date date="{result.datetime}" format="d.m.Y" /><br />
+        {result.location}
+        <f:if condition="{result.result}">
+            <br />
+            {result.result.home} : {result.result.away}
+        </f:if>
+        <br /><br />
+    </div>
+</f:for>
 
 </html>

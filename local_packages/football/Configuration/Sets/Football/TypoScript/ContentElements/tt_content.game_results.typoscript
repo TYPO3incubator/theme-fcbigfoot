@@ -1,6 +1,15 @@
 tt_content {
-  game_results =< lib.contentElement
-  game_results {
-    templateName = GameResults
-  }
+    game_results =< lib.contentElement
+    game_results {
+        templateName = GameResults
+
+        dataProcessing {
+            10 = json-processor
+            10 {
+                if.isTrue.field = file_link
+                jsonFile.field = file_link
+                as = results
+            }
+        }
+    }
 }

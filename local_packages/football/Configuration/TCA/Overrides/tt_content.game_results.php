@@ -16,7 +16,7 @@ call_user_func(function () {
             'label' => $languageFile . ':title',
             'value' => $cType,
             'icon' => 'actions-dice',
-            'group' => 'default',
+            'group' => 'special',
             'description' => $languageFile . ':description',
         ],
     );
