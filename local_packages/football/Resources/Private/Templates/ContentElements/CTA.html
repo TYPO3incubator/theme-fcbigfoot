@@ -5,8 +5,8 @@
 
 <f:if condition="{data_buttons -> count()} > 1">
     <f:for each="{data_buttons}" as="button">
-        <f:link.typolink parameter="{button.data.link}">
-            {button.data.text}
+        <f:link.typolink parameter="{button.data.url}">
+            {button.data.title}
         </f:link.typolink>
     </f:for>
 </f:if>

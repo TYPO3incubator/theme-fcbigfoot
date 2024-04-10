@@ -21,11 +21,25 @@ call_user_func(static function() {
             'label' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.cta.xlf:buttons',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' => 'tx_football_domain_model_button',
+                'foreign_table' => 'tx_football_domain_model_link',
+                'foreign_table_field' => 'parenttable',
+                'foreign_field' => 'parentid',
                 'appearance' => [
-                    'showSynchronizationLink' => 1,
-                    'showAllLocalizationLink' => 1,
-                    'showPossibleLocalizationRecords' => 1,
+                    'useSortable' => true
+                ],
+                'overrideChildTca' => [
+                    'types' => [
+                        [
+                            'showitem' => 'title,url'
+                        ],
+                    ],
+                    'columns' => [
+                        'url' => [
+                            'config' => [
+                                'allowedTypes' => ['page', 'url'],
+                            ],
+                        ],
+                    ],
                 ],
             ],
         ],
