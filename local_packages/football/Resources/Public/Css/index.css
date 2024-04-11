@@ -10626,6 +10626,10 @@ h1 {
   }
 }
 
+.pt-navbar {
+  padding-top: 100px;
+}
+
 h1,
 .h1 {
   font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
