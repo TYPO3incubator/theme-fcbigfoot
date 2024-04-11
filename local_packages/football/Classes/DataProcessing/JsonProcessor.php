@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace SurfcampTeam4\Football\DataProcessing;
 
+use TYPO3\CMS\Core\Exception\SiteNotFoundException;
+use TYPO3\CMS\Core\Site\SiteFinder;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
@@ -21,6 +23,7 @@ class JsonProcessor implements DataProcessorInterface
      * @param array $processorConfiguration
      * @param array $processedData
      * @return array
+     * @throws SiteNotFoundException
      */
     public function process(
         ContentObjectRenderer $cObj,
@@ -38,11 +41,20 @@ class JsonProcessor implements DataProcessorInterface
             && $jsonFile != ''
         ) {
             $linkFactory = GeneralUtility::makeInstance(LinkFactory::class);
-            // ToDo: Get absolute Uri for file link
-            $jsonFileUrl = $linkFactory->createUri($jsonFile);
+            $jsonFile = $linkFactory->createUri($jsonFile);
+            $jsonFileUrl = $jsonFile->getUrl();
+
+            // if link is a file we need to create an absolute link with siteFinder
+            if ($jsonFile->getType() == 'file') {
+                $sitePid = $processedData['data']['pid'];
+                $siteFinder = GeneralUtility::makeInstance(SiteFinder::class);
+                $site = $siteFinder->getSiteByPageId($sitePid);
+                $jsonFileUrl = $site->getBase()->getScheme() . '://' . $site->getBase()->getHost() . $jsonFileUrl;
+            }
 
             $targetVariableName = $cObj->stdWrapValue('as', $processorConfiguration, 'jsonData');
-            $processedData[$targetVariableName] = json_decode(file_get_contents($jsonFileUrl->getUrl()), true);
+            // get the jsonData as array and put it in the processedData
+            $processedData[$targetVariableName] = json_decode(file_get_contents($jsonFileUrl), true);
         }
 
         return $processedData;
