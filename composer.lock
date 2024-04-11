@@ -2249,11 +2249,7 @@
         },
         {
             "name": "surfcamp-team4/football",
-<<<<<<< HEAD
             "version": "dev-task/indexed-search",
-=======
-            "version": "dev-main",
->>>>>>> 92503b608a47d0d1a9e0507bb6c14f1ececae839
             "dist": {
                 "type": "path",
                 "url": "local_packages/football",
@@ -5576,11 +5572,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-<<<<<<< HEAD
-            "time": "2024-04-10T16:19:51+00:00"
-=======
             "time": "2024-04-11T08:31:03+00:00"
->>>>>>> 92503b608a47d0d1a9e0507bb6c14f1ececae839
         },
         {
             "name": "typo3/cms-dashboard",
