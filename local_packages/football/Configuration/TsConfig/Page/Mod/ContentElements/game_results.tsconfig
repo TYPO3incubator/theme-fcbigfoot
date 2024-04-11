@@ -3,8 +3,8 @@ mod.wizards.newContentElement.wizardItems {
        elements {
            game_results {
                iconIdentifier = actions-dice
-               title = LLL:EXT:football/Resources/Private/Language/ContentElements/game_results.xlf:title
-               description = LLL:EXT:football/Resources/Private/Language/ContentElements/game_results.xlf:description
+               title = LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.game_results.xlf:title
+               description = LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.game_results.xlf:description
                tt_content_defValues {
                    CType = game_results
                }

@@ -6,7 +6,7 @@ call_user_func(function () {
 
     $ext = 'football';
     $cType = 'game_results';
-    $languageFile =  'LLL:EXT:' . $ext . '/Resources/Private/Language/ContentElements/' . $cType . '.xlf';
+    $languageFile =  'LLL:EXT:' . $ext . '/Resources/Private/Language/locallang_db.tt_content.' . $cType . '.xlf';
 
     // Adds the content element to the "Type" dropdown
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
