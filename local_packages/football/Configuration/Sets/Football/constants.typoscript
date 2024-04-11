@@ -87,3 +87,22 @@ styles.content {
         keep = path
     }
 }
+
+######################
+### INDEXED SEARCH ###
+######################
+
+plugin.tx_indexedsearch {
+    view {
+        templateRootPath = EXT:football/Resources/Private/Templates/Plugins/IndexedSearch/Templates
+        partialRootPath = EXT:football/Resources/Private/Templates/Plugins/IndexedSearch/Partials
+    }
+    settings {
+        targetPid = 16
+
+        # This need to be set in order for the search results to be displayed
+        # Indexed Search is not ready yet for Sets, as it expects a root template
+        # In this case the SQL statement `ISEC`.`rl0` IN (0) is added, which shows 0 results
+        rootPidList = -1
+    }
+}

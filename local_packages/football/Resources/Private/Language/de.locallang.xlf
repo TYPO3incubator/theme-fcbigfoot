@@ -10,6 +10,10 @@
                 <source>Hero</source>
                 <target>Hero</target>
             </trans-unit>
+            <trans-unit id="indexedSearch.placeholder">
+                <source>Search</source>
+                <target>Suche</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

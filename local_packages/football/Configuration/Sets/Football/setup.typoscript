@@ -1,3 +1,7 @@
+@import 'EXT:indexed_search/Configuration/TypoScript/'
+
 @import './TypoScript/Page/*.typoscript'
 @import './TypoScript/Helper/*.typoscript'
 @import './TypoScript/ContentElements/*.typoscript'
+@import './TypoScript/Config/*.typoscript'
+@import './TypoScript/Lib/*.typoscript'

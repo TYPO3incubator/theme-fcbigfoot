@@ -1,0 +1,12 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<ul class="footer-menu">
+    <f:for each="{mainMenu}" as="menuItem">
+        <li class="footer-menu--item">
+            <f:link.page pageUid="{menuItem.data.uid}"
+                         class="footer-menu--link {f:if(condition: menuItem.active, then:'active')}">
+                {menuItem.title}
+            </f:link.page>
+        </li>
+    </f:for>
+</ul>
+</html>

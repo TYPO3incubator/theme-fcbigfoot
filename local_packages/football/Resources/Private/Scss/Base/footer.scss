@@ -1,0 +1,42 @@
+.footer{
+    background-color: $color__white;
+    padding-top: toRem(85) ;
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: toRem(30);
+        border-bottom: 1px solid $color__light-gray;
+        img{
+            height: toRem(100);
+            width: toRem(120);
+        }
+    }
+
+    &--menu-container {
+        display: flex;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: toRem(30) 0 toRem(60) 0;
+        font-weight: 300;
+    }
+
+    &--icons {
+
+        a{
+            margin-left: toRem(8);
+            padding: toRem(8);
+            color: $color__primary;
+            background-color: $color__light-gray;
+            border-radius: toRem(20);
+            text-decoration: none;
+        }
+
+        .icon-facebook {
+            padding: toRem(8) 0 toRem(8) toRem(8);
+        }
+    }
+}
