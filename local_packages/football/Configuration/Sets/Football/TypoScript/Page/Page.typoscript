@@ -49,4 +49,8 @@ page {
       rte = EXT:football/Resources/Public/Css/rte.css
     }
   }
+
+  includeJSFooter {
+    index = EXT:football/Resources/Public/JavaScript/index.js
+  }
 }
