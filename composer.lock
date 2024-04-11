@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4cd31c94c86f95d401ec3d7a9c571d72",
+    "content-hash": "fbf15caa002933f1d3d7477b173413bc",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2249,7 +2249,7 @@
         },
         {
             "name": "surfcamp-team4/football",
-            "version": "dev-main",
+            "version": "dev-task/indexed-search",
             "dist": {
                 "type": "path",
                 "url": "local_packages/football",
@@ -6087,6 +6087,66 @@
             "time": "2024-04-07T17:26:46+00:00"
         },
         {
+            "name": "typo3/cms-indexed-search",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/indexed_search.git",
+                "reference": "fc64415fdbc9ea54e77ae3cbd978a60f79a27b13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/indexed_search/zipball/fc64415fdbc9ea54e77ae3cbd978a60f79a27b13",
+                "reference": "fc64415fdbc9ea54e77ae3cbd978a60f79a27b13",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "13.1.*@dev"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "ext-exif": "Used to extract exif metadata 'COMMENT' and 'ImageDescription' of uploaded images",
+                "typo3/cms-scheduler": "For garbage collection of search statistics"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "13.1.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "indexed_search"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\IndexedSearch\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Indexed Search - Provides indexing functionality for TYPO3 pages and records as well as files including PDF, Word, HTML and plain text.",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-indexed-search/main/en-us",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2024-04-08T13:02:06+00:00"
+        },
+        {
             "name": "typo3/cms-info",
             "version": "dev-main",
             "source": {
@@ -7571,6 +7631,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "surfcamp-team4/football": 20,
         "typo3/cms-backend": 20,
         "typo3/cms-belog": 20,
         "typo3/cms-beuser": 20,
@@ -7583,6 +7644,7 @@
         "typo3/cms-fluid": 20,
         "typo3/cms-form": 20,
         "typo3/cms-frontend": 20,
+        "typo3/cms-indexed-search": 20,
         "typo3/cms-info": 20,
         "typo3/cms-install": 20,
         "typo3/cms-lowlevel": 20,
@@ -7591,7 +7653,6 @@
         "typo3/cms-seo": 20,
         "typo3/cms-setup": 20,
         "typo3/cms-tstemplate": 20,
-        "surfcamp-team4/football": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,

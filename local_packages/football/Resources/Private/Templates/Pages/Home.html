@@ -1,0 +1,38 @@
+<f:layout name="Default" />
+
+<f:section name="Header">
+    <f:render partial="DataProcMenu" arguments="{_all}"/>
+</f:section>
+
+<f:section name="Main">
+    <f:comment><!-- Hero section --></f:comment>
+    <f:cObject typoscriptObjectPath="lib.content" data="1"></f:cObject>
+
+    <f:comment><!-- Game teaser section --></f:comment>
+    <div class="bg-body-tertiary py-5">
+        <div class="container">
+            <f:cObject typoscriptObjectPath="lib.content" data="2"></f:cObject>
+        </div>
+    </div>
+
+    <f:comment><!-- Main content section --></f:comment>
+    <div class="container">
+        <f:cObject typoscriptObjectPath="lib.content" data="0"></f:cObject>
+    </div>
+
+    <f:comment><!-- CTA section --></f:comment>
+    <f:cObject typoscriptObjectPath="lib.content" data="3"></f:cObject>
+
+    <footer>
+        <f:if condition="{footer.0.data.data_privacy}">
+            <f:link.typolink parameter="{footer.0.data.data_privacy}" />
+        </f:if>
+        <f:if condition="{footer.0.data.copyright}">
+            {footer.0.data.copyright}
+        </f:if>
+        <f:for each="{footer.0.socials}" as="socials">
+            <f:link.typolink parameter="{socials.data.url}">{socials.data.icon}</f:link.typolink>
+        </f:for>
+    </footer>
+
+</f:section>
