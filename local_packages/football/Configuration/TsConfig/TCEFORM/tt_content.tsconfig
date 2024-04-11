@@ -1,4 +1,6 @@
 TCEFORM.tt_content {
+    CType.keepItems = game_results,textmedia,cta,hero,sponsors
+
     header_layout {
         keepItems = 2,3,4,100
     }
