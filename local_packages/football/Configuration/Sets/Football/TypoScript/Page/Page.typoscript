@@ -42,6 +42,14 @@ page {
           }
         }
       }
+      30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      30 {
+        table = pages
+        selectFields = contact
+        uidInList.data = site:rootPageId
+        pidInList = 0
+        as = contact
+      }
     }
   }
 

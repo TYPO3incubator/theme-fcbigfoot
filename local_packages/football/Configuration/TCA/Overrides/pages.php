@@ -54,12 +54,31 @@ call_user_func(function()
                 ],
             ],
         ],
+        'contact' => [
+            'label' => 'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:pages.contact',
+            'displayCond' => 'FIELD:is_siteroot:REQ:true',
+            'config' => [
+                'type' => 'link',
+                'allowedTypes' => ['page','url'],
+                'appearance' => [
+                    'allowedOptions' => ['target'],
+                ],
+            ],
+        ],
     ];
 
     /**
      * add fields to pages
      */
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns($table, $fields);
+
+    /**
+     * add new palette for header config
+     */
+    $GLOBALS['TCA']['pages']['palettes']['header'] = [
+        'label' => 'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:pages.palettes.header',
+        'showitem' => 'contact'
+    ];
 
     /**
      * add new palette for footer config
@@ -74,7 +93,9 @@ call_user_func(function()
      */
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         $table,
-        '--div--;LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:pages.tab.footer,
+        '--div--;LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:pages.tab.header,
+            --palette--;;header,
+            --div--;LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:pages.tab.footer,
             --palette--;;footer'
     );
 

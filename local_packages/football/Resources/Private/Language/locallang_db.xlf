@@ -16,11 +16,20 @@
             <trans-unit id="pages.social">
                 <source>Social Media Links</source>
             </trans-unit>
+            <trans-unit id="pages.contact">
+                <source>Page with contact form</source>
+            </trans-unit>
             <trans-unit id="pages.tab.footer">
                 <source>Footer</source>
             </trans-unit>
             <trans-unit id="pages.palettes.footer">
                 <source>Footer</source>
+            </trans-unit>
+            <trans-unit id="pages.tab.header">
+                <source>Header</source>
+            </trans-unit>
+            <trans-unit id="pages.palettes.header">
+                <source>Header</source>
             </trans-unit>
             <!--- END: pages -->
 

@@ -50,9 +50,11 @@
             </ul>
 
             <f:cObject typoscriptObjectPath="lib.searchBox"></f:cObject>
-            <div class="d-grid">
-                <button class="btn btn-primary" type="submit">Contact us</button>
-            </div>
+            <f:if condition="{contact}">
+                <div class="d-grid">
+                    <f:link.typolink parameter="{contact.0.data.contact}" class="btn btn-primary" additionalAttributes="{type:'submit'}" />
+                </div>
+            </f:if>
         </div>
     </div>
 </nav>
