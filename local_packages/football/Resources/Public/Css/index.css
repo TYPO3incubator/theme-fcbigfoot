@@ -10733,7 +10733,7 @@ a {
 
 .hero--image {
   position: absolute;
-  top: 5.875rem;
+  top: 0;
   left: 0;
   height: 100vh !important;
   object-fit: cover;
