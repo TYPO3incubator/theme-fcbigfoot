@@ -1,4 +1,5 @@
 @import 'EXT:indexed_search/Configuration/TypoScript/'
+@import 'EXT:form/Configuration/TypoScript/*'
 
 @import './TypoScript/Page/*.typoscript'
 @import './TypoScript/Helper/*.typoscript'
