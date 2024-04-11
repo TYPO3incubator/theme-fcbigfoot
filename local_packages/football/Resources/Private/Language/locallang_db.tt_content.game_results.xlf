@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-04-09UTC16:05:290">
+        <header>
+            <authorName>Surfcamp-Team4</authorName>
+            <authorEmail>surfcamp@team4.de</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="title">
+                <source>Game Results</source>
+            </trans-unit>
+            <trans-unit id="description">
+                <source>Get Results for your team</source>
+            </trans-unit>
+            <trans-unit id="file_link">
+                <source>Link to JSON-File</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,40 @@
+//spacing sizes
+
+$unit-factor: toRem(6);
+
+$unit-1: calc(2 * $unit-factor); /* 12 */
+$unit-2: calc(4 * $unit-factor); /* 24 */
+$unit-3: calc(6 * $unit-factor); /* 36 */
+$unit-4: calc(8 * $unit-factor); /* 48 */
+$unit-5: calc(10 * $unit-factor); /* 60 */
+$unit-6: calc(12 * $unit-factor); /* 72 */
+$unit-7: calc(14 * $unit-factor); /* 84 */
+$unit-8: calc(16 * $unit-factor); /* 96 */
+$unit-9: calc(18 * $unit-factor); /* 108 */
+$unit-10: calc(20 * $unit-factor); /* 120 */
+
+//text sizes
+
+$line-height__default: 1.5;
+$line-height__copy--text: 1.75;
+
+$text-font-weight__light: 300;
+$text-font-weight__regular: 400;
+$text-font-weight__bold:700;
+$text-font-weight__heavy: 900;
+
+$font-size__12: toRem(12);
+$font-size__14: toRem(14);
+$font-size__16: toRem(16);
+$font-size__18: toRem(18);
+$font-size__19: toRem(19);
+$font-size__20: toRem(20);
+$font-size__22: toRem(22);
+$font-size__24: toRem(24);
+$font-size__26: toRem(26);
+$font-size__28: toRem(28);
+$font-size__32: toRem(32);
+$font-size__36: toRem(36);
+$font-size__42: toRem(42);
+$font-size__44: toRem(44);
+$font-size__48: toRem(48);

@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SurfcampTeam4\Football\:
+    resource: '../Classes/*'
+
+  SurfcampTeam4\Football\DataProcessing\JsonProcessor:
+    public: true
+    tags:
+      - { name: 'data.processor', identifier: 'json-processor' }

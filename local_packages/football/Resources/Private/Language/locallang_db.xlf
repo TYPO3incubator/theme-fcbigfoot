@@ -24,6 +24,21 @@
             </trans-unit>
             <!--- END: pages -->
 
+            <!--- BEGIN: tt_content -->
+            <trans-unit id="tt_content.file_link">
+                <source>File Link</source>
+            </trans-unit>
+            <trans-unit id="tt_content.game_results_mode">
+                <source>Output style of data</source>
+            </trans-unit>
+            <trans-unit id="tt_content.game_results_mode.slider">
+                <source>Show results of the latest games (Slider)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.game_results_mode.table">
+                <source>Show all results (Table)</source>
+            </trans-unit>
+            <!--- END: tt_content -->
+
             <!--- BEGIN: tx_football_domain_model_link -->
             <trans-unit id="tx_football_domain_model_link">
                 <source>Link</source>
@@ -41,6 +56,33 @@
                 <source>Select</source>
             </trans-unit>
             <!--- END: tx_football_domain_model_link -->
+
+            <!--- BEGIN: tx_football_domain_model_button -->
+            <trans-unit id="tx_football_domain_model_button">
+                <source>Button</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_button.text">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_button.link">
+                <source>Link</source>
+            </trans-unit>
+            <!--- END: tx_football_domain_model_button -->
+
+            <!-- BEGIN: tx_football_domain_model_sponsor -->
+            <trans-unit id="tx_football_domain_model_sponsor">
+                <source>Sponsor</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_sponsor.url">
+                <source>URL</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_sponsor.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_sponsor.image">
+                <source>Image</source>
+            </trans-unit>
+            <!-- END: tx_football_domain_model_sponsor -->
         </body>
     </file>
 </xliff>

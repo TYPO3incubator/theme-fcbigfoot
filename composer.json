@@ -61,5 +61,24 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
+    },
+    "scripts": {
+        "npm-install": [
+            "npm install"
+        ],
+        "watch-assets": [
+            "gulp watch"
+        ],
+        "compile-css": [
+            "gulp scssTask"
+        ],
+        "compile-js": [
+            "gulp jsTask"
+        ],
+        "compile-assets": [
+            "composer compile-css",
+            "composer compile-js"
+        ],
+        "post-install-cmd": "@npm-install"
     }
 }

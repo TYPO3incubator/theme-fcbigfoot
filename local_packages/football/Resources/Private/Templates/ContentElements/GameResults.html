@@ -1,0 +1,25 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<h3>{data.header}</h3>
+<span>{data.game_results_mode}</span>
+
+<!--- for data structure have a look at Resources/Public/Data/matches.json -->
+<f:for each="{results}" as="result">
+    <div>
+        {result.homeTeam.name} : {result.awayTeam.name}<br />
+        <f:format.date date="{result.datetime}" format="d.m.Y" /><br />
+        {result.location}<br />
+        <f:if condition="{result.result}">
+            <f:then>
+                {result.result.home} : {result.result.away}
+            </f:then>
+            <f:else>
+                not played yet
+            </f:else>
+        </f:if>
+        <br /><br />
+    </div>
+</f:for>
+
+</html>

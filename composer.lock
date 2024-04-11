@@ -2249,7 +2249,11 @@
         },
         {
             "name": "surfcamp-team4/football",
+<<<<<<< HEAD
             "version": "dev-task/indexed-search",
+=======
+            "version": "dev-main",
+>>>>>>> 92503b608a47d0d1a9e0507bb6c14f1ececae839
             "dist": {
                 "type": "path",
                 "url": "local_packages/football",
@@ -5438,12 +5442,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/core.git",
-                "reference": "b3447183d185877d473eaf6bc86572bbe8d8274e"
+                "reference": "9d4e1d7d243efc99df6d30462eb040e78d61c154"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/b3447183d185877d473eaf6bc86572bbe8d8274e",
-                "reference": "b3447183d185877d473eaf6bc86572bbe8d8274e",
+                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/9d4e1d7d243efc99df6d30462eb040e78d61c154",
+                "reference": "9d4e1d7d243efc99df6d30462eb040e78d61c154",
                 "shasum": ""
             },
             "require": {
@@ -5572,7 +5576,11 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
+<<<<<<< HEAD
             "time": "2024-04-10T16:19:51+00:00"
+=======
+            "time": "2024-04-11T08:31:03+00:00"
+>>>>>>> 92503b608a47d0d1a9e0507bb6c14f1ececae839
         },
         {
             "name": "typo3/cms-dashboard",
@@ -6342,12 +6350,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/rte_ckeditor.git",
-                "reference": "81260a9c5908d2ea5a97423320683ceb63e0aa02"
+                "reference": "95652cbd3e3e6473de05529923f7a9fd587cbe76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/rte_ckeditor/zipball/81260a9c5908d2ea5a97423320683ceb63e0aa02",
-                "reference": "81260a9c5908d2ea5a97423320683ceb63e0aa02",
+                "url": "https://api.github.com/repos/TYPO3-CMS/rte_ckeditor/zipball/95652cbd3e3e6473de05529923f7a9fd587cbe76",
+                "reference": "95652cbd3e3e6473de05529923f7a9fd587cbe76",
                 "shasum": ""
             },
             "require": {
@@ -6396,7 +6404,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-03-22T16:01:01+00:00"
+            "time": "2024-04-11T08:13:51+00:00"
         },
         {
             "name": "typo3/cms-scheduler",
