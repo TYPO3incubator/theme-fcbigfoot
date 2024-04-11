@@ -12,9 +12,12 @@ call_user_func(static function() {
             'value' => 'cta',
             'group' => 'default',
             'description' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.cta.xlf:description',
-            'icon' => 'mimetypes-x-content-text',
+            'icon' => 'actions-window-open',
         ]
     );
+
+    // add the icon to the typeicon_class
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['cta'] = 'actions-window-open';
 
     $temporaryColumns = [
         'buttons' => [
