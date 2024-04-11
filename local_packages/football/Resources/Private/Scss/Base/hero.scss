@@ -1,12 +1,13 @@
 .hero {
     position: relative;
     height: 100vh;
+    overflow: hidden;
 
     &--image {
         position: absolute;
-        top: 0;
+        top: toRem(94);
         left: 0;
-        height: 75vh!important;
+        height: 100vh!important;
         object-fit: cover;
         z-index: -1;
     }
