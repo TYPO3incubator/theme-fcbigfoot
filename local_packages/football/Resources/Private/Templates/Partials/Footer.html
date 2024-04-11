@@ -1,0 +1,23 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer__main">
+            <f:image src="{settings.page.headerLogo}" width="300"/>
+            <div class="footer--menu-container">
+                <f:render partial="FooterMenu" arguments="{_all}"/>
+                <f:if condition="{footer.0.data.data_privacy}">
+                    <f:link.typolink parameter="{footer.0.data.data_privacy}" class="footer-menu--link"></f:link.typolink>
+                </f:if>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <f:if condition="{footer.0.data.copyright}">
+                {footer.0.data.copyright}
+            </f:if>
+            <div class="footer--icons">
+                <f:for each="{footer.0.socials}" as="socials">
+                    <f:link.typolink class="icon-{socials.data.icon}" parameter="{socials.data.url}"> </f:link.typolink>
+                </f:for>
+            </div>
+        </div>
+    </div>
+</footer>
