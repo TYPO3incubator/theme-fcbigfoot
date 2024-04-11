@@ -7,16 +7,10 @@
         </header>
         <body>
             <trans-unit id="title">
-                <source>Hero</source>
+                <source>Event Teaser</source>
             </trans-unit>
             <trans-unit id="description">
-                <source>Add a new hero content element</source>
-            </trans-unit>
-            <trans-unit id="button_link">
-                <source>Button link</source>
-            </trans-unit>
-            <trans-unit id="button_text">
-                <source>Button text</source>
+                <source>Placeholder for the event teaser</source>
             </trans-unit>
         </body>
     </file>

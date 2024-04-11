@@ -1,0 +1,27 @@
+tt_content {
+  sponsors =< lib.contentElement
+  sponsors {
+    templateName = Sponsors
+
+    dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      10 {
+        if.isTrue.field = sponsors
+        table = tx_football_domain_model_sponsor
+        pidInList.field = pid
+        where = {#parentid}=###uid###
+        markers.uid.field = uid
+        selectFields = url,title,image
+        orderBy = sorting
+        as = sponsors
+        dataProcessing {
+          10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+          10 {
+            references.fieldName = image
+            as = image
+          }
+        }
+      }
+    }
+  }
+}

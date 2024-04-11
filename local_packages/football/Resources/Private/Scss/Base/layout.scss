@@ -1,3 +1,10 @@
 //global styles
 @import "footer";
 @import "typography";
+
+// temporary (?) limiting images to the container width so we don't have overflows while
+// content elements aren't properly styled
+.container img {
+  max-width: 100%;
+  height: auto;
+}

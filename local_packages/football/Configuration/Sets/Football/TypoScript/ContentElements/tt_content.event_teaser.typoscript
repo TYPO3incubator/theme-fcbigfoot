@@ -1,0 +1,6 @@
+tt_content {
+    event_teaser =< lib.contentElement
+    event_teaser {
+        templateName = EventTeaser
+    }
+}
