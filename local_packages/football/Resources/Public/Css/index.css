@@ -10665,6 +10665,7 @@ h6,
 }
 
 .btn-primary {
+  padding: 0.5rem 1.875rem;
   background-color: #FF4D08;
   border-color: #FF4D08;
   transition: all 0.3s ease-in-out;
@@ -10724,9 +10725,52 @@ a {
   font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.hero {
+  position: relative;
+  margin-top: 9.375rem;
+  height: 100vh;
+}
+
+.hero--image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75vh !important;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero .container,
+.hero .row {
+  height: 100%;
+}
+
+.hero .row {
+  align-content: center;
+}
+
+.hero--title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 3.75rem;
+  line-height: 5rem;
+  letter-spacing: 1px;
+}
+
+.hero--subtitle {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 38px;
+  color: #ffffff;
+}
+
 .container img {
   max-width: 100%;
   height: auto;
+}
+
+.navbar {
+  z-index: 1;
 }
 
 .call-to-action {
