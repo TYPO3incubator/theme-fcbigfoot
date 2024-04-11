@@ -10,7 +10,6 @@ call_user_func(function () {
               settings {
                 yamlConfigurations {
                   100 = EXT:football/Configuration/Form/Setup.yaml
-                  130 = EXT:football/Configuration/Form/FormDefinitions/contactForm.form.yaml
                 }
               }
             }
@@ -18,7 +17,6 @@ call_user_func(function () {
               settings {
                 yamlConfigurations {
                   100 = EXT:football/Configuration/Form/Setup.yaml
-                  130 = EXT:football/Configuration/Form/FormDefinitions/contactForm.form.yaml
                 }
               }
             }
