@@ -1,0 +1,8 @@
+tt_content.indexedsearch_pi2 = EXTBASEPLUGIN
+tt_content.indexedsearch_pi2 {
+    extensionName = IndexedSearch
+    pluginName = Pi2
+}
+
+
+

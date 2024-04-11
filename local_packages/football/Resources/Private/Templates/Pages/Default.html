@@ -2,13 +2,16 @@
 
 <f:section name="Header">
     <f:render partial="DataProcMenu" arguments="{_all}"/>
+    <f:cObject typoscriptObjectPath="lib.searchBox"></f:cObject>
 </f:section>
 
 <f:section name="Main">
 
     <f:image src="{settings.page.headerLogo}" width="650"/>
 
+    <!--TYPO3SEARCH_begin-->
     <f:cObject typoscriptObjectPath="lib.content" data="0"></f:cObject>
+    <!--TYPO3SEARCH_end-->
 
     <footer>
         <f:if condition="{footer.0.data.data_privacy}">

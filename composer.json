@@ -35,6 +35,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.2",
+        "surfcamp-team4/football": "@dev",
         "typo3/cms-backend": "dev-main",
         "typo3/cms-belog": "dev-main",
         "typo3/cms-beuser": "dev-main",
@@ -47,6 +48,7 @@
         "typo3/cms-fluid": "dev-main",
         "typo3/cms-form": "dev-main",
         "typo3/cms-frontend": "dev-main",
+        "typo3/cms-indexed-search": "dev-main",
         "typo3/cms-info": "dev-main",
         "typo3/cms-install": "dev-main",
         "typo3/cms-lowlevel": "dev-main",
@@ -55,8 +57,7 @@
         "typo3/cms-seo": "dev-main",
         "typo3/cms-setup": "dev-main",
         "typo3/cms-tstemplate": "dev-main",
-        "vlucas/phpdotenv": "^5.6",
-        "surfcamp-team4/football": "@dev"
+        "vlucas/phpdotenv": "^5.6"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
