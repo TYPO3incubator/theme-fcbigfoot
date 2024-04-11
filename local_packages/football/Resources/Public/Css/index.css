@@ -10612,6 +10612,18 @@ h6,
   margin: 0 auto 1rem;
 }
 
+.btn-primary {
+  background-color: #FF4D08;
+  border-color: #FF4D08;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #FF4D08;
+  border-color: #FF4D08;
+}
+
 .container img {
   max-width: 100%;
   height: auto;
