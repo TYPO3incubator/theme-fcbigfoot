@@ -7,6 +7,7 @@ const minify = require('gulp-minify');
 const {watch} = require('gulp');
 const concatCss = require('gulp-concat-css');
 const sass = require('gulp-sass')(require('sass'));
+const esbuild = require('gulp-esbuild');
 
 /**
  * Theme Path
@@ -28,7 +29,10 @@ const jsPath = [
 function jsTask() {
     return src(jsPath)
         .pipe(sourcemaps.init())
-        .pipe(concat('index.js'))
+        .pipe(esbuild({
+            outfile: 'index.js',
+            bundle: true
+        }))
         .pipe(terser())
         .pipe(sourcemaps.write('.'))
         .pipe(minify({
