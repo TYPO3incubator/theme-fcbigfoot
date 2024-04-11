@@ -1,0 +1,3 @@
+config {
+    index_enable = 1
+}

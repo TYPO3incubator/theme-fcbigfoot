@@ -2,11 +2,15 @@
 
 <f:section name="Header">
     <f:render partial="DataProcMenu" arguments="{_all}"/>
+    <f:cObject typoscriptObjectPath="lib.searchBox"></f:cObject>
 </f:section>
 
 <f:section name="Main">
+
     <div class="container">
+        <!--TYPO3SEARCH_begin-->
         <f:cObject typoscriptObjectPath="lib.content" data="0"></f:cObject>
+        <!--TYPO3SEARCH_end-->
     </div>
 
     <footer class="footer">

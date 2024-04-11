@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg position-fixed top-0 start-0 end-0 bg-white d-lg-block">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <f:image src="{settings.page.headerLogo}" height="68" width="68"/>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,10 +48,8 @@
                     </li>
                 </f:for>
             </ul>
-            <form class="d-flex mb-2 mb-lg-0 me-lg-2" role="search">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-default d-none" type="submit">Search</button>
-            </form>
+
+            <f:cObject typoscriptObjectPath="lib.searchBox"></f:cObject>
             <div class="d-grid">
                 <button class="btn btn-primary" type="submit">Contact us</button>
             </div>

@@ -12,6 +12,9 @@
             <trans-unit id="hero.description">
                 <source>Create a hero content element</source>
             </trans-unit>
+            <trans-unit id="indexedSearch.placeholder">
+                <source>Search</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
