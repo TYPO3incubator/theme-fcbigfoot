@@ -3,4 +3,10 @@
 
 <f:render partial="Header/All" arguments="{_all}" />
 
+<f:if condition="{data.bodytext}">
+    <div>
+        <f:format.html>{data.bodytext}</f:format.html>
+    </div>
+</f:if>
+
 </html>
