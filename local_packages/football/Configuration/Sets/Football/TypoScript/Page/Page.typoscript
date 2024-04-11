@@ -1,49 +1,52 @@
 page = PAGE
 page.10 = PAGEVIEW
 page {
-  10 {
-    paths{
-      100 = EXT:football/Resources/Private/Templates/
-    }
+    10 {
+        paths {
+            100 = EXT:football/Resources/Private/Templates/
+        }
 
-    variables {
-      parentPageTitle = TEXT
-      parentPageTitle.data = levelfield:-1:title
-    }
-    settings {
-      headerLogo = {$page.headerLogo}
-    }
-    dataProcessing {
-      10 = menu
-      10 {
-        levels = 2
-        as = mainMenu
-      }
-    }
-    20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-    20 {
-        table = pages
-        selectFields = data_privacy,copyright,social
-        uidInList.data = site:rootPageId
-        pidInList = 0
-        as = footer
+        variables {
+            parentPageTitle = TEXT
+            parentPageTitle.data = levelfield:-1:title
+        }
+
+        settings {
+            headerLogo = {$page.headerLogo}
+        }
+
         dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            10 = menu
             10 {
-                table = tx_football_domain_model_link
-                selectFields = url,icon
-                pidInList.data = field:uid
-                where.data = field:uid
-                where.wrapper = parentid=|
-                orderBy = sorting
-                as = socials
+                levels = 2
+                as = mainMenu
+            }
+
+            20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            20 {
+                table = pages
+                selectFields = data_privacy,copyright,social
+                uidInList.data = site:rootPageId
+                pidInList = 0
+                as = footer
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+                    10 {
+                        table = tx_football_domain_model_link
+                        selectFields = url,icon
+                        pidInList.data = field:uid
+                        where.data = field:uid
+                        where.wrapper = parentid=|
+                        orderBy = sorting
+                        as = socials
+                    }
+                }
             }
         }
     }
-  }
 
-  includeCSS {
-    theme = EXT:football/Resources/Public/Css/index.css
-    rte = EXT:football/Resources/Public/Css/rte.css
-  }
+    includeCSS {
+        theme = EXT:football/Resources/Public/Css/index.css
+        rte = EXT:football/Resources/Public/Css/rte.css
+    }
 }
