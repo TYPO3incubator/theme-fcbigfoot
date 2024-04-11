@@ -2249,7 +2249,7 @@
         },
         {
             "name": "surfcamp-team4/football",
-            "version": "dev-task/football-ext",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "local_packages/football",
@@ -5133,12 +5133,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/backend.git",
-                "reference": "3f16d65202f4b1ddce2776cef376638afbbe8500"
+                "reference": "d1f0f11a154dae452ff4eda2ebf7097545d76e12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/3f16d65202f4b1ddce2776cef376638afbbe8500",
-                "reference": "3f16d65202f4b1ddce2776cef376638afbbe8500",
+                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/d1f0f11a154dae452ff4eda2ebf7097545d76e12",
+                "reference": "d1f0f11a154dae452ff4eda2ebf7097545d76e12",
                 "shasum": ""
             },
             "require": {
@@ -5207,7 +5207,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-08T09:46:23+00:00"
+            "time": "2024-04-10T16:21:54+00:00"
         },
         {
             "name": "typo3/cms-belog",
@@ -5438,12 +5438,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/core.git",
-                "reference": "06a35ffeb4de09b698ea2120dce4ca1b5503d0c4"
+                "reference": "9d4e1d7d243efc99df6d30462eb040e78d61c154"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/06a35ffeb4de09b698ea2120dce4ca1b5503d0c4",
-                "reference": "06a35ffeb4de09b698ea2120dce4ca1b5503d0c4",
+                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/9d4e1d7d243efc99df6d30462eb040e78d61c154",
+                "reference": "9d4e1d7d243efc99df6d30462eb040e78d61c154",
                 "shasum": ""
             },
             "require": {
@@ -5572,7 +5572,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-08T11:57:01+00:00"
+            "time": "2024-04-11T08:31:03+00:00"
         },
         {
             "name": "typo3/cms-dashboard",
@@ -6223,12 +6223,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/lowlevel.git",
-                "reference": "d7f46a7a2c41a187c711d07bb77b0dcfe1999101"
+                "reference": "bc43cfe3292746b1234e4267adbc932ba1e2fdc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/lowlevel/zipball/d7f46a7a2c41a187c711d07bb77b0dcfe1999101",
-                "reference": "d7f46a7a2c41a187c711d07bb77b0dcfe1999101",
+                "url": "https://api.github.com/repos/TYPO3-CMS/lowlevel/zipball/bc43cfe3292746b1234e4267adbc932ba1e2fdc1",
+                "reference": "bc43cfe3292746b1234e4267adbc932ba1e2fdc1",
                 "shasum": ""
             },
             "require": {
@@ -6274,7 +6274,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-08T07:03:59+00:00"
+            "time": "2024-04-10T16:19:51+00:00"
         },
         {
             "name": "typo3/cms-rte-ckeditor",
@@ -6282,12 +6282,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/rte_ckeditor.git",
-                "reference": "81260a9c5908d2ea5a97423320683ceb63e0aa02"
+                "reference": "95652cbd3e3e6473de05529923f7a9fd587cbe76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/rte_ckeditor/zipball/81260a9c5908d2ea5a97423320683ceb63e0aa02",
-                "reference": "81260a9c5908d2ea5a97423320683ceb63e0aa02",
+                "url": "https://api.github.com/repos/TYPO3-CMS/rte_ckeditor/zipball/95652cbd3e3e6473de05529923f7a9fd587cbe76",
+                "reference": "95652cbd3e3e6473de05529923f7a9fd587cbe76",
                 "shasum": ""
             },
             "require": {
@@ -6336,7 +6336,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-03-22T16:01:01+00:00"
+            "time": "2024-04-11T08:13:51+00:00"
         },
         {
             "name": "typo3/cms-scheduler",
@@ -6523,12 +6523,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/tstemplate.git",
-                "reference": "801be5ed27dc8e5f0189c778008b0e500d61661a"
+                "reference": "11fdc93137424f8bd4a31fbc241b0cb17500acb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/tstemplate/zipball/801be5ed27dc8e5f0189c778008b0e500d61661a",
-                "reference": "801be5ed27dc8e5f0189c778008b0e500d61661a",
+                "url": "https://api.github.com/repos/TYPO3-CMS/tstemplate/zipball/11fdc93137424f8bd4a31fbc241b0cb17500acb0",
+                "reference": "11fdc93137424f8bd4a31fbc241b0cb17500acb0",
                 "shasum": ""
             },
             "require": {
@@ -6574,7 +6574,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-04-07T09:18:44+00:00"
+            "time": "2024-04-10T10:53:17+00:00"
         },
         {
             "name": "typo3/html-sanitizer",
@@ -6827,12 +6827,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "55338196704d6dae11257b34c4f5cdde484dfaa9"
+                "reference": "31f373849a62ccfe23cba594e91b488e3ec2270b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/55338196704d6dae11257b34c4f5cdde484dfaa9",
-                "reference": "55338196704d6dae11257b34c4f5cdde484dfaa9",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/31f373849a62ccfe23cba594e91b488e3ec2270b",
+                "reference": "31f373849a62ccfe23cba594e91b488e3ec2270b",
                 "shasum": ""
             },
             "conflict": {
@@ -6919,9 +6919,10 @@
                 "concrete5/concrete5": "<9.2.8",
                 "concrete5/core": "<8.5.8|>=9,<9.1",
                 "contao-components/mediaelement": ">=2.14.2,<2.21.1",
+                "contao/comments-bundle": ">=2,<4.13.40|>=5.0.0.0-RC1-dev,<5.3.4",
                 "contao/contao": ">=4,<4.4.56|>=4.5,<4.9.40|>=4.10,<4.11.7|>=4.13,<4.13.21|>=5.1,<5.1.4",
                 "contao/core": ">=2,<3.5.39",
-                "contao/core-bundle": ">=3,<3.5.35|>=4,<4.9.42|>=4.10,<4.13.28|>=5,<5.1.10",
+                "contao/core-bundle": "<4.13.40|>=5,<5.3.4",
                 "contao/listing-bundle": ">=4,<4.4.8",
                 "contao/managed-edition": "<=1.5",
                 "corveda/phpsandbox": "<1.3.5",
@@ -7296,8 +7297,8 @@
                 "serluck/phpwhois": "<=4.2.6",
                 "sfroemken/url_redirect": "<=1.2.1",
                 "sheng/yiicms": "<=1.2",
-                "shopware/core": "<=6.5.7.3",
-                "shopware/platform": "<=6.5.7.3|>=6.5.8,<6.5.8.7-dev",
+                "shopware/core": "<6.5.8.8-dev|>=6.6.0.0-RC1-dev,<6.6.1",
+                "shopware/platform": "<6.5.8.8-dev|>=6.6.0.0-RC1-dev,<6.6.1",
                 "shopware/production": "<=6.3.5.2",
                 "shopware/shopware": "<=5.7.17",
                 "shopware/storefront": "<=6.4.8.1|>=6.5.8,<6.5.8.7-dev",
@@ -7564,7 +7565,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-03T22:04:54+00:00"
+            "time": "2024-04-09T19:04:27+00:00"
         }
     ],
     "aliases": [],
