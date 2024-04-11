@@ -1,4 +1,5 @@
 .btn-primary {
+    padding: toRem(8) toRem(30);
     background-color: $color__primary;
     border-color: $color__primary;
     transition: all .3s ease-in-out;

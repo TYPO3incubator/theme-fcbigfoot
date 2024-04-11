@@ -1,13 +1,21 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 
-<h3>{data.header}</h3>
-<p>{data.subheader}</p>
-<span>
-    <f:link.typolink parameter="{data.button_link}">
-        {data.button_text}
-    </f:link.typolink>
-</span>
-<f:image src="{data.image}" treatIdAsReference="1" />
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h3 class="hero--title">{data.header}</h3>
+                <p class="hero--subtitle">{data.subheader}</p>
+                <f:link.typolink parameter="{data.button_link}"
+                                 class="hero--button btn btn-primary">
+                    {data.button_text}
+                </f:link.typolink>
+            </div>
+        </div>
+    </div>
+    <f:image class="hero--image" src="{data.image}" treatIdAsReference="1"/>
+</div>
 
 </html>
 
