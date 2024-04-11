@@ -9,7 +9,19 @@
             <trans-unit id="backend_layout.default">
                 <source>Default</source>
             </trans-unit>
+            <trans-unit id="backend_layout.home">
+                <source>Homepage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.hero">
+                <source>Hero</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.game">
+                <source>Game Teaser</source>
+            </trans-unit>
             <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.cta">
                 <source>Normal</source>
             </trans-unit>
             <trans-unit id="hero.description">
