@@ -1,0 +1,37 @@
+.hero {
+    position: relative;
+    margin-top: toRem(150);
+    height: 100vh;
+
+    &--image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 75vh!important;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .container, .row {
+        height: 100%;
+    }
+
+    .row {
+        align-content: center;
+    }
+
+    &--title {
+        color: $color__white;
+        font-weight: 900;
+        font-size: toRem(60);
+        line-height: toRem(80);
+        letter-spacing: 1px;
+    }
+
+    &--subtitle {
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 38px;
+        color: $color__white;
+    }
+}
