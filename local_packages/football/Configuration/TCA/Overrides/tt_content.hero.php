@@ -12,9 +12,12 @@ call_user_func(static function() {
             'value' => 'hero',
             'group' => 'default',
             'description' => 'LLL:EXT:football/Resources/Private/Language/locallang_db.tt_content.hero.xlf:description',
-            'icon' => 'mimetypes-x-content-text',
+            'icon' => 'content-header',
         ]
     );
+
+    // add the icon to the typeicon_class
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['hero'] = 'content-header';
 
     $temporaryColumns = [
         'button_text' => [

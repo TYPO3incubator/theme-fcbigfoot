@@ -7,11 +7,11 @@
 
 <f:section name="Main">
 
-    <f:image src="{settings.page.headerLogo}" width="650"/>
-
-    <!--TYPO3SEARCH_begin-->
-    <f:cObject typoscriptObjectPath="lib.content" data="0"></f:cObject>
-    <!--TYPO3SEARCH_end-->
+    <div class="container">
+        <!--TYPO3SEARCH_begin-->
+        <f:cObject typoscriptObjectPath="lib.content" data="0"></f:cObject>
+        <!--TYPO3SEARCH_end-->
+    </div>
 
     <footer>
         <f:if condition="{footer.0.data.data_privacy}">

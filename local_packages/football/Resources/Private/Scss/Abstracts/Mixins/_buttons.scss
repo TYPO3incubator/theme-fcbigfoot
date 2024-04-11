@@ -1,0 +1,10 @@
+.btn-primary {
+    background-color: $color__primary;
+    border-color: $color__primary;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: $color__white;
+        color: $color__primary;
+        border-color: $color__primary;
+    }
+}
