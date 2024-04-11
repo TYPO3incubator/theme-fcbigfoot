@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+defined('TYPO3') || die();
+
 call_user_func(static function() {
     $ext = 'football';
     $cType = 'news_teaser';
@@ -16,6 +18,9 @@ call_user_func(static function() {
             'description' => 'LLL:EXT:' . $ext . '/Resources/Private/Language/locallang_db.tt_content.' . $cType . '.xlf:description',
         ]
     );
+
+    // add the icon to the typeicon_class
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes'][$cType] = 'content-news';
 
     $GLOBALS['TCA']['tt_content']['types'][$cType] = [
         'showitem' => '
