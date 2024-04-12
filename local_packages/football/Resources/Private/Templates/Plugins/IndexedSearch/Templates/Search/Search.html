@@ -31,7 +31,7 @@
         <f:then>
             <div class="tx-indexedsearch-browsebox">
                 <f:sanitize.html>
-                    <f:translate key="displayResults" arguments="{0: result.pagination.startRecordNumber, 1: result.pagination.endRecordNumber, 2: result.pagination.totalAmount}" />
+                    <f:translate key="indexedSearch.displayResults" extensionName="football" arguments="{0: result.count}" />
                 </f:sanitize.html>
 
                 <!-- render the anchor-links to the sections inside the displayed result rows -->
@@ -55,21 +55,21 @@
                         </table>
                     </div>
                 </f:if>
-
-                <f:render partial="Pagination" arguments="{pagination: result.pagination, searchParams: searchParams}" />
             </div>
-            <f:for each="{result.rows}" as="row">
-                <f:if condition="{row.isSectionHeader}">
-                    <f:then>
-                    <div id="anchor_{row.sectionId}" class="tx-indexedsearch-sectionhead">
-                        <h2 class="tx-indexedsearch-title"><f:format.html>{row.sectionTitle}</f:format.html> <span class="tx-indexedsearch-result-count">{row.numResultRows} <f:translate key="{f:if(condition: '{row.numResultRows} > 1', then: 'result.pages', else: 'result.page')}" /></span></h2>
-                    </div>
-                    </f:then>
-                    <f:else>
-                        <f:render partial="Searchresult" arguments="{row: row, searchParams: searchParams, firstRow: firstRow}" />
-                    </f:else>
-                </f:if>
-            </f:for>
+            <div class="tx-indexedsearch-results">
+                <f:for each="{result.rows}" as="row">
+                    <f:if condition="{row.isSectionHeader}">
+                        <f:then>
+                        <div id="anchor_{row.sectionId}" class="tx-indexedsearch-sectionhead">
+                            <h2 class="tx-indexedsearch-title"><f:format.html>{row.sectionTitle}</f:format.html> <span class="tx-indexedsearch-result-count">{row.numResultRows} <f:translate key="{f:if(condition: '{row.numResultRows} > 1', then: 'result.pages', else: 'result.page')}" /></span></h2>
+                        </div>
+                        </f:then>
+                        <f:else>
+                            <f:render partial="Searchresult" arguments="{row: row, searchParams: searchParams, firstRow: firstRow}" />
+                        </f:else>
+                    </f:if>
+                </f:for>
+            </div>
             <div class="tx-indexedsearch-browsebox">
                 <f:render partial="Pagination" arguments="{pagination: result.pagination, searchParams: searchParams, freeIndexUid: freeIndexUid}" />
             </div>
