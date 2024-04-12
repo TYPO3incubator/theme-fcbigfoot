@@ -1,6 +1,7 @@
 .hero {
     position: relative;
     height: 100vh;
+    background-color: $color__primary--blue-opacity;
     overflow: hidden;
 
     &--image {

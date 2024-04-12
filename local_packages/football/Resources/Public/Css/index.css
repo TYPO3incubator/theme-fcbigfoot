@@ -11371,6 +11371,7 @@ a.main-logo:hover {
 .hero {
   position: relative;
   height: 100vh;
+  background-color: rgba(0, 35, 69, 0.3);
   overflow: hidden;
 }
 
