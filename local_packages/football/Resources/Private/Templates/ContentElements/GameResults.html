@@ -4,22 +4,77 @@
 <h3>{data.header}</h3>
 <span>{data.game_results_mode}</span>
 
-<!--- for data structure have a look at Resources/Public/Data/matches.json -->
-<f:for each="{results}" as="result">
-    <div>
-        {result.homeTeam.name} : {result.awayTeam.name}<br />
-        <f:format.date date="{result.datetime}" format="d.m.Y" /><br />
-        {result.location}<br />
-        <f:if condition="{result.result}">
-            <f:then>
-                {result.result.home} : {result.result.away}
-            </f:then>
-            <f:else>
-                not played yet
-            </f:else>
-        </f:if>
-        <br /><br />
+        <div class="splide__track">
+            <ul class="splide__list">
+                <f:for each="{results}" as="result">
+                    <li class="splide__slide text-center">
+                        <div class="d-flex align-items-center justify-content-around my-4">
+                            <img class="game-slider-image" src="{result.homeTeam.iconUrl}" alt="{result.homeTeam.name}"/>
+                            <div class="game-score">
+                                <f:if condition="{result.result}">
+                                    <f:then>
+                                        {result.result.home} : {result.result.away}
+                                    </f:then>
+                                    <f:else>
+                                        TBA
+                                    </f:else>
+                                </f:if>
+                            </div>
+                            <img class="game-slider-image" src="{result.awayTeam.iconUrl}" alt="{result.awayTeam.name}"/>
+                        </div>
+                        <div class="font-italic text-muted">
+                            {result.meta.league} @ {result.location}
+                        </div>
+                        <time datetime="{result.datetime}">
+                            <f:format.date date="{result.datetime}" format="d.m.Y" />
+                        </time>
+                    </li>
+                </f:for>
+            </ul>
+        </div>
+    </section>
+</f:section>
+
+<f:section name="ResultsTable">
+    <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+            <tbody>
+            <f:for each="{results}" as="result">
+                <tr class="text-center {f:if(condition: '!{result.result}', then: 'opacity-50 pe-none')}">
+                    <td>
+                        <time class="fw-bold" datetime="{result.datetime}">
+                            <f:format.date date="{result.datetime}" format="d.m.Y" />
+                        </time>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center justify-content-center mb-2">
+                            <img class="game-slider-image-small" src="{result.homeTeam.iconUrl}" alt="{result.homeTeam.name}"/>
+                            <div class="game-score">
+                                <f:if condition="{result.result}">
+                                    <f:then>
+                                        {result.result.home} : {result.result.away}
+                                    </f:then>
+                                    <f:else>
+                                        TBA
+                                    </f:else>
+                                </f:if>
+                            </div>
+                            <img class="game-slider-image-small" src="{result.awayTeam.iconUrl}" alt="{result.awayTeam.name}"/>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="fw-bold">
+                            {result.meta.league}
+                        </div>
+                        <div class="text-muted">
+                            {result.location}
+                        </div>
+                    </td>
+                </tr>
+            </f:for>
+            </tbody>
+        </table>
     </div>
-</f:for>
+</f:section>
 
 </html>

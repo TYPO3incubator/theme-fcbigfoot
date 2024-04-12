@@ -1,0 +1,16 @@
+.game-slider-image {
+  max-height: 100px;
+  width: auto;
+}
+
+.game-slider-image-small {
+  max-height: 2.5rem;
+  padding-inline: 10px;
+  width: auto;
+}
+
+.game-score {
+  color: var(--bs-primary);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
