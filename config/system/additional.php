@@ -8,6 +8,11 @@ if (file_exists(__DIR__ . '/../../.env')) {
     $dotenv->load();
 }
 
+if (\TYPO3\CMS\Core\Core\Environment::getContext() == 'Production') {
+    $dotenv = Dotenv\Dotenv::createMutable(__DIR__ . '/../../', '.env.prod');
+    $dotenv->load();
+}
+
 $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive($GLOBALS['TYPO3_CONF_VARS'], [
     'BE' => [
         'debug' => $_ENV['TYPO3_BE_DEBUG'] ?? 0,
@@ -43,5 +48,7 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive($GLOBALS['TYPO3_CONF_VARS'
         'displayErrors' => $_ENV['TYPO3_SYS_DISPLAYERRORS'] ?? 0,
         'encryptionKey' => $_ENV['TYPO3_SYS_ENCRYPTIONKEY'],
         'exceptionalErrors' => $_ENV['TYPO3_SYS_EXCEPTIONALERRORS'] ?? 4096,
+        'http_basic_auth_user' => $_ENV['HTTP_BASIC_AUTH_USER'] ?? '',
+        'http_basic_auth_pwd' => $_ENV['HTTP_BASIC_AUTH_PWD'] ?? '',
     ],
 ]);

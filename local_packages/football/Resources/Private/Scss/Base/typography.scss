@@ -31,4 +31,10 @@ a {
     &:hover {
         border-bottom: 1px solid $color__primary-red;
     }
+
+    &.main-logo {
+        &:hover {
+            border: 0;
+        }
+    }
 }

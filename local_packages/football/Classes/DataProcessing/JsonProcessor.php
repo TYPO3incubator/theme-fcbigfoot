@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace SurfcampTeam4\Football\DataProcessing;
 
 use TYPO3\CMS\Core\Exception\SiteNotFoundException;
+use TYPO3\CMS\Core\Http\RequestFactory;
 use TYPO3\CMS\Core\Site\SiteFinder;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
@@ -17,6 +18,17 @@ use TYPO3\CMS\Frontend\Typolink\LinkFactory;
  */
 class JsonProcessor implements DataProcessorInterface
 {
+    /**
+     * @var RequestFactory
+     */
+    private RequestFactory $requestFactory;
+
+    public function __construct(
+        RequestFactory $requestFactory,
+    ) {
+        $this->requestFactory = $requestFactory;
+    }
+
     /**
      * @param ContentObjectRenderer $cObj
      * @param array $contentObjectConfiguration
@@ -53,8 +65,35 @@ class JsonProcessor implements DataProcessorInterface
             }
 
             $targetVariableName = $cObj->stdWrapValue('as', $processorConfiguration, 'jsonData');
+            $content = file_get_contents($jsonFileUrl);
+            if (
+                isset($GLOBALS['TYPO3_CONF_VARS']['SYS']['http_basic_auth_user'])
+                && $GLOBALS['TYPO3_CONF_VARS']['SYS']['http_basic_auth_pwd']
+            ) {
+                $credentials = base64_encode(
+                    $GLOBALS['TYPO3_CONF_VARS']['SYS']['http_basic_auth_user']
+                    . ':' . $GLOBALS['TYPO3_CONF_VARS']['SYS']['http_basic_auth_pwd']
+                );
+                try {
+                    $response = $this->requestFactory->request(
+                        $jsonFileUrl,
+                        'GET',
+                        [
+                            'headers' => ['Authorization' => 'Basic ' . $credentials]
+                        ]
+                    );
+                    $content = $response->getBody()->getContents();
+                } catch (\Exception $e) {
+                    $content = false;
+                }
+            }
+
+            if ($content === false) {
+                return $processedData;
+            }
+
             // get the jsonData as array and put it in the processedData
-            $processedData[$targetVariableName] = json_decode(file_get_contents($jsonFileUrl), true);
+            $processedData[$targetVariableName] = json_decode($content, true);
         }
 
         return $processedData;
