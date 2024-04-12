@@ -1,8 +1,18 @@
 <html data-namespace-typo3-fluid="true"
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 
-<h3>{data.header}</h3>
-<span>{data.game_results_mode}</span>
+<f:if condition="{data.game_results_mode} == 'slider'">
+    <f:then>
+        <f:render section="ResultsSlider" arguments="{_all}"></f:render>
+    </f:then>
+    <f:else>
+        <f:render section="ResultsTable" arguments="{_all}"></f:render>
+    </f:else>
+</f:if>
+
+<f:section name="ResultsSlider">
+    <section class="splide" aria-labelledby="carousel-heading">
+        <h3 id="carousel-heading">{data.header}</h3>
 
         <div class="splide__track">
             <ul class="splide__list">
