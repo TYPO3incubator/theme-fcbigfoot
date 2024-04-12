@@ -7,11 +7,14 @@ const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootst
 const collapseElementList = document.querySelectorAll('[data-bs-toggle="collapse"]')
 const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
 
-new Splide( '.splide', {
-    perPage: 3,
-    breakpoints: {
-        768: {
-            perPage: 1,
+if (document.querySelector('.splide')) {
+    new Splide( '.splide', {
+        perPage: 3,
+        breakpoints: {
+            768: {
+                perPage: 1,
+            },
         },
-    }
-}).mount();
+        pagination: false,
+    }).mount();
+}
