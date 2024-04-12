@@ -34,7 +34,7 @@ renderables:
     label: 'Lorem ipsum dolor sit'
     renderables:
       -
-        defaultValue: 'Name *'
+        defaultValue: ''
         type: Text
         identifier: text-1
         properties:
@@ -42,6 +42,7 @@ renderables:
             minlength: '3'
             maxlength: '30'
             required: required
+            placeholder: 'Name *'
         validators:
           -
             options:
@@ -50,27 +51,31 @@ renderables:
             identifier: StringLength
           -
             identifier: NotEmpty
+        label: Name
       -
-        defaultValue: 'E-Mail address *'
+        defaultValue: ''
         type: Email
         identifier: email-1
         properties:
           fluidAdditionalAttributes:
             required: required
+            placeholder: 'E-Mail address *'
         validators:
           -
             identifier: EmailAddress
           -
             identifier: NotEmpty
+        label: 'Email address'
       -
-        defaultValue: 'Subject *'
+        defaultValue: ''
         type: Textarea
         identifier: text-3
         properties:
           fluidAdditionalAttributes:
             minlength: '2'
-            maxlength: '60'
+            maxlength: '600'
             required: required
+            placeholder: 'Subject *'
         validators:
           -
             options:
@@ -79,6 +84,7 @@ renderables:
             identifier: StringLength
           -
             identifier: NotEmpty
+        label: Subject
       -
         type: Checkbox
         identifier: checkbox-1
