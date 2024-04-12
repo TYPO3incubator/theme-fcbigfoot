@@ -11070,7 +11070,7 @@ textarea.form-control {
 .event--title {
   max-width: 6.25rem;
   margin: 0 !important;
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   font-weight: 900;
 }
 
@@ -11090,7 +11090,7 @@ textarea.form-control {
   display: block;
   height: 0.0625rem;
   width: 1.25rem;
-  margin-left: 0.9375rem;
+  margin-left: 0.5rem;
   background: #ffffff;
 }
 

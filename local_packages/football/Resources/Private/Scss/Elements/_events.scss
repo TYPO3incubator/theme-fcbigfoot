@@ -23,7 +23,7 @@
     &--title {
         max-width: toRem(100);
         margin: 0!important;
-        font-size: toRem(30);
+        font-size: toRem(28);
         font-weight: 900;
     }
 
@@ -42,7 +42,7 @@
             display: block;
             height: toRem(1);
             width: toRem(20);
-            margin-left: toRem(15);
+            margin-left: toRem(8);
             background: $color__white;
 
             &:before, &:after {
