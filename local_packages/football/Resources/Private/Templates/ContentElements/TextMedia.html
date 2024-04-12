@@ -5,7 +5,7 @@
     <f:render partial="Header/All" arguments="{_all}" />
 </f:if>
 
-<div class="ce-textpic ce-{gallery.position.horizontal} ce-{gallery.position.vertical}{f:if(condition: gallery.position.noWrap, then: ' ce-nowrap')}">
+<div class="ce-textpic {f:if(condition:'{gallery.rows -> f:count()} > 0', then:'ce-{gallery.position.horizontal} ce-{gallery.position.vertical}')} {f:if(condition: gallery.position.noWrap, then: ' ce-nowrap')}">
     <f:if condition="{gallery.position.vertical} != 'below'">
         <f:render partial="Media/Gallery" arguments="{_all}" />
     </f:if>
