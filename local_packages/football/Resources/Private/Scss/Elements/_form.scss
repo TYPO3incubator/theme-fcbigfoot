@@ -1,13 +1,12 @@
-.pt-navbar {
-    form {
-        margin: auto;
-        padding-top: toRem(60);
+#contactForm-5 {
+    margin: auto;
+    padding-top: toRem(60);
 
-        @include media-breakpoint-up(md){
-            max-width: 75%;
-        }
+    @include media-breakpoint-up(md) {
+        max-width: 75%;
     }
 }
+
 
 .form-check {
     padding-left: 0;
@@ -22,6 +21,7 @@
 .form-check-label {
     font-size: toRem(12);
     font-weight: 300;
+
     span {
         padding-left: toRem(12);
     }
@@ -37,14 +37,14 @@
     display: none;
 }
 
-.form-group{
+.form-group {
     input[type=text], input[type=email] {
         min-height: toRem(48);
     }
 }
 
 textarea {
-    &.form-control{
+    &.form-control {
         min-height: toRem(142);
     }
 }
