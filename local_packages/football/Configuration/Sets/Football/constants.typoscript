@@ -11,7 +11,6 @@ page {
         apple-mobile-web-app-capable = no
         compatible = IE=edge
     }
-    headerLogo = EXT:football/Resources/Public/Images/Logos/logo.svg
 }
 
 

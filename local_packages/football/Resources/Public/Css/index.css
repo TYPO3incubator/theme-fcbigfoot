@@ -10666,15 +10666,15 @@ h6,
 
 .btn-primary {
   padding: 0.5rem 1.875rem;
-  background-color: #2D479A;
-  border-color: #2D479A;
+  background-color: #FF4D08;
+  border-color: #FF4D08;
   transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
   background-color: #ffffff;
-  color: #2D479A;
-  border-color: #2D479A;
+  color: #FF4D08;
+  border-color: #FF4D08;
 }
 
 .footer {
@@ -10709,7 +10709,7 @@ h6,
 .footer--icons a {
   margin-left: 0.5rem;
   padding: 0.5rem;
-  color: #2D479A;
+  color: #FF4D08;
   background-color: #ECECE7;
   border-radius: 1.25rem;
   text-decoration: none;
@@ -10806,7 +10806,7 @@ a {
 }
 
 .footer-menu--link:hover {
-  color: #2D479A;
+  color: #FF4D08;
 }
 
 .footer-menu--secondary {
@@ -10814,52 +10814,71 @@ a {
   flex-direction: column;
 }
 
-.pt-navbar form {
-  margin: auto;
-  padding-top: 3.75rem;
+.tx-indexedsearch-form {
+  width: 25%;
 }
 
-@media (min-width: 768px) {
-  .pt-navbar form {
-    max-width: 75%;
-  }
+.tx-indexedsearch-info-sword {
+  padding: 16px 0;
 }
 
-.form-check {
-  padding-left: 0;
-  margin: 0.9375rem 0;
+.tx-indexedsearch-info-sword .tx-indexedsearch-info-sword-word {
+  font-weight: bold;
 }
 
-.form-check-label,
-.form-label {
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.tx-indexedsearch-results {
+  margin-top: 20px;
+}
+
+.tx-indexedsearch-results .tx-indexedsearch-res {
+  padding: 16px 0;
+  border-top: 1px solid #ECECE7;
+}
+
+.tx-indexedsearch-results .tx-indexedsearch-res .tx-indexedsearch-title a {
+  color: #FF3232;
+  text-decoration: none;
+}
+
+.tx-indexedsearch-results .tx-indexedsearch-res .tx-indexedsearch-description {
+  margin-bottom: 0;
+}
+
+.tx-indexedsearch-browsebox {
+  margin-top: 20px;
+}
+
+.tx-indexedsearch-browsebox ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.tx-indexedsearch-browsebox ul li {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ECECE7;
+  margin-right: 15px;
+}
+
+.tx-indexedsearch-browsebox ul li:hover,
+.tx-indexedsearch-browsebox ul li.active {
+  border-color: #002345;
+}
+
+.tx-indexedsearch-browsebox ul li a {
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
   color: #002345;
 }
 
-.form-check-label {
-  font-size: 0.75rem;
-  font-weight: 300;
-}
-
-.form-check-label span {
-  padding-left: 0.75rem;
-}
-
-.form-control {
-  border-radius: 0;
-  font-size: 0.9375rem;
-  font-weight: 300;
-}
-
-.required {
-  display: none;
-}
-
-.form-group input[type=text],
-.form-group input[type=email] {
-  min-height: 3rem;
-}
-
-textarea.form-control {
-  min-height: 8.875rem;
+.tx-indexedsearch-browsebox ul li.tx-indexedsearch-browselist-next {
+  border: 0;
 }

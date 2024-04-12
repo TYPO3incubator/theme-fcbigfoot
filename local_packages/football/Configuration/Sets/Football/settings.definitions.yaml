@@ -1,0 +1,11 @@
+settings:
+  general.logo:
+      label: 'Logo'
+      description: 'Your logo'
+      type: string
+      default: 'EXT:football/Resources/Public/Images/Logos/logo.svg'
+  general.favicon:
+    label: 'Favicon'
+    description: 'Your Favicon'
+    type: string
+    default: 'EXT:football/Resources/Public/Icons/favicon.png'
