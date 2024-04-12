@@ -53,8 +53,23 @@ class JsonProcessor implements DataProcessorInterface
             }
 
             $targetVariableName = $cObj->stdWrapValue('as', $processorConfiguration, 'jsonData');
+            $content = file_get_contents($jsonFileUrl);
+            // ToDo: temporary for staging with htaccess
+            if ($content === false) {
+                $content = file_get_contents($jsonFileUrl, false, stream_context_create([
+                        'http' => [
+                            'method' => 'GET',
+                            'header' => 'Authorization: Basic ' . base64_encode('surfcamp:fuerteventura2024')
+                        ]
+                    ]
+                ));
+                if ($content === false) {
+                    return $processedData;
+                }
+            }
+
             // get the jsonData as array and put it in the processedData
-            $processedData[$targetVariableName] = json_decode(file_get_contents($jsonFileUrl), true);
+            $processedData[$targetVariableName] = json_decode($content, true);
         }
 
         return $processedData;
