@@ -11364,6 +11364,10 @@ a:hover {
   border-bottom: 1px solid #FF3232;
 }
 
+a.main-logo:hover {
+  border: 0;
+}
+
 .hero {
   position: relative;
   height: 100vh;
