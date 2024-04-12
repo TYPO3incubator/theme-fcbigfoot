@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace SurfcampTeam4\Football\DataProcessing;
 
 use TYPO3\CMS\Core\Exception\SiteNotFoundException;
+use TYPO3\CMS\Core\Http\RequestFactory;
 use TYPO3\CMS\Core\Site\SiteFinder;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
@@ -17,6 +18,17 @@ use TYPO3\CMS\Frontend\Typolink\LinkFactory;
  */
 class JsonProcessor implements DataProcessorInterface
 {
+    /**
+     * @var RequestFactory
+     */
+    private RequestFactory $requestFactory;
+
+    public function __construct(
+        RequestFactory $requestFactory,
+    ) {
+        $this->requestFactory = $requestFactory;
+    }
+
     /**
      * @param ContentObjectRenderer $cObj
      * @param array $contentObjectConfiguration
@@ -54,18 +66,26 @@ class JsonProcessor implements DataProcessorInterface
 
             $targetVariableName = $cObj->stdWrapValue('as', $processorConfiguration, 'jsonData');
             $content = file_get_contents($jsonFileUrl);
-            // ToDo: temporary for staging with htaccess
-            if ($content === false) {
-                $content = file_get_contents($jsonFileUrl, false, stream_context_create([
-                        'http' => [
-                            'method' => 'GET',
-                            'header' => 'Authorization: Basic ' . base64_encode('surfcamp:fuerteventura2024')
-                        ]
+            if (
+                isset($GLOBALS['TYPO3_CONF_VARS']['SYS']['http_basic_auth_user'])
+                && $GLOBALS['TYPO3_CONF_VARS']['SYS']['http_basic_auth_pwd']
+            ) {
+                $credentials = base64_encode(
+                    $GLOBALS['TYPO3_CONF_VARS']['SYS']['http_basic_auth_user']
+                    . ':' . $GLOBALS['TYPO3_CONF_VARS']['SYS']['http_basic_auth_pwd']
+                );
+                $response = $this->requestFactory->request(
+                    $jsonFileUrl,
+                    'GET',
+                    [
+                        'headers' => ['Authorization' => 'Basic ' . $credentials]
                     ]
-                ));
-                if ($content === false) {
-                    return $processedData;
-                }
+                );
+                $content = $response->getBody()->getContents();
+            }
+
+            if ($content === false) {
+                return $processedData;
             }
 
             // get the jsonData as array and put it in the processedData
