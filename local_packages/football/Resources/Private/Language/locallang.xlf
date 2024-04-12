@@ -15,6 +15,9 @@
             <trans-unit id="indexedSearch.placeholder">
                 <source>Search</source>
             </trans-unit>
+            <trans-unit id="indexedSearch.displayResults">
+                <source><![CDATA[Found <strong>%s</strong> results]]></source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
