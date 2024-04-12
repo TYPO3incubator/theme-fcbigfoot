@@ -11432,7 +11432,7 @@ a {
 }
 
 .game-score {
-  color: var(--bs-primary);
+  color: #FF4D08;
   font-size: 2.5rem;
   font-weight: bolder;
 }
