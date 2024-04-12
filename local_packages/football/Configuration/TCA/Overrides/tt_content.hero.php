@@ -77,7 +77,10 @@ call_user_func(static function() {
             'image' => [
                 'config' => [
                     'minitems' => 1,
-                    'maxitems' => 1
+                    'maxitems' => 1,
+                    'appearance' => [
+                        'enabledControls' => ['hide' => false]
+                    ]
                 ],
             ],
         ],
