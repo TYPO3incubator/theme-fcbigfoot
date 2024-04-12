@@ -11436,6 +11436,10 @@ a.main-logo:hover {
   background: #2D479A;
 }
 
+.ce-gallery img {
+  width: 90%;
+}
+
 .call-to-action {
   color: #FFFFFF;
   background-color: #002345;
