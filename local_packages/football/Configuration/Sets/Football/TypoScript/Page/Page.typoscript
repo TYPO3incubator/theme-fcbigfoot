@@ -11,9 +11,6 @@ page {
       parentPageTitle.data = levelfield:-1:title
     }
 
-    settings {
-      headerLogo = {$page.headerLogo}
-    }
     dataProcessing {
       10 = menu
       10 {
@@ -53,10 +50,19 @@ page {
     }
   }
 
-  shortcutIcon = EXT:football/Resources/Public/Icons/favicon.png
-
   meta {
     viewport = width=device-width, initial-scale=1.0, user-scalable=yes
+  }
+
+  headerData {
+    100 = FLUIDTEMPLATE
+    100 {
+        file = EXT:football/Resources/Private/Templates/Partials/Favicon.html
+        dataProcessing.10 = site
+        dataProcessing.10 {
+            as = site
+        }
+    }
   }
 
   includeCSS {
