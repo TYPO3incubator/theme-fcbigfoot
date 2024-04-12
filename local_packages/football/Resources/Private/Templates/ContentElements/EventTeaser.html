@@ -1,12 +1,66 @@
 <html data-namespace-typo3-fluid="true"
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 
-<f:render partial="Header/All" arguments="{_all}" />
-
-<f:if condition="{data.bodytext}">
-    <div>
-        <f:format.html>{data.bodytext}</f:format.html>
+<div class="row">
+    <div class="col-lg-6 col-md-6 mb-4">
+        <f:render partial="Header/All" arguments="{_all}" />
     </div>
-</f:if>
+    <div class="col-lg-6 col-md-6 mb-4">
+        <f:if condition="{data.bodytext}">
+            <div>
+                <f:format.html>{data.bodytext}</f:format.html>
+            </div>
+        </f:if>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-6 col-lg-6 mb-4">
+        <div class="event">
+            <f:image class="event--image" src="EXT:football/Resources/Public/Images/Events/event4.png" width="800" />
+
+            <div class="event--contents">
+                <h3 class="event--title">
+                    Gameday
+                </h3>
+                <a class="event--button" href="/events">Learn more <span class="icon-arrow"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-2 col-lg-6 mb-4">
+        <div class="event">
+            <f:image class="event--image" src="EXT:football/Resources/Public/Images/Events/event5.png" width="800" />
+
+            <div class="event--contents">
+                <h3 class="event--title">
+                    Charity event
+                </h3>
+                <a class="event--button" href="/events">Learn more <span class="icon-arrow"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-2 col-lg-6 mb-4">
+        <div class="event">
+            <f:image class="event--image" src="EXT:football/Resources/Public/Images/Events/event1.png" width="800" />
+
+            <div class="event--contents">
+                <h3 class="event--title">Junior training
+                </h3>
+                <a class="event--button" href="/events">Learn more <span class="icon-arrow"></span></a>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="col-xl-2 col-lg-6 mb-4">
+    <div class="event">
+        <f:image class="event--image" src="EXT:football/Resources/Public/Images/Events/event2.png" width="800" />
+
+        <div class="event--contents">
+            <h3 class="event--title">Training</h3>
+            <a class="event--button" href="/events">Learn more <span class="icon-arrow"></span></a>
+        </div>
+    </div>
+</div>
+</div>
 
 </html>

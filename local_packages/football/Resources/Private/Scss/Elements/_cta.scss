@@ -3,6 +3,16 @@
   background-color: #002345;
 
   .btn {
-    min-width: 150px;
+    min-width: toRem(150);
+    background-color: $color__primary-red;
+    border-color: $color__primary-red;
+    transition: all .3s ease-in-out;
+    &:hover {
+      background-color: $color__white;
+      color: $color__primary-red;
+      border-color: $color__primary-red;
+    }
   }
+
+
 }
