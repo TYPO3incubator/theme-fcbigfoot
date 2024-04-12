@@ -2,5 +2,12 @@ tt_content {
   hero =< lib.contentElement
   hero {
     templateName = Hero
+
+    dataProcessing.10 = files
+    dataProcessing.10 {
+        as = images
+        references.fieldName = image
+        references.table = tt_content
+    }
   }
 }
