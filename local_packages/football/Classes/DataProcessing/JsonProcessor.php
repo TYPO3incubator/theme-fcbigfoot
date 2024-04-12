@@ -74,14 +74,18 @@ class JsonProcessor implements DataProcessorInterface
                     $GLOBALS['TYPO3_CONF_VARS']['SYS']['http_basic_auth_user']
                     . ':' . $GLOBALS['TYPO3_CONF_VARS']['SYS']['http_basic_auth_pwd']
                 );
-                $response = $this->requestFactory->request(
-                    $jsonFileUrl,
-                    'GET',
-                    [
-                        'headers' => ['Authorization' => 'Basic ' . $credentials]
-                    ]
-                );
-                $content = $response->getBody()->getContents();
+                try {
+                    $response = $this->requestFactory->request(
+                        $jsonFileUrl,
+                        'GET',
+                        [
+                            'headers' => ['Authorization' => 'Basic ' . $credentials]
+                        ]
+                    );
+                    $content = $response->getBody()->getContents();
+                } catch (\Exception $e) {
+                    $content = false;
+                }
             }
 
             if ($content === false) {
