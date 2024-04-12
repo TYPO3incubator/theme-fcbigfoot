@@ -53,6 +53,8 @@ page {
     }
   }
 
+  shortcutIcon = EXT:football/Resources/Public/Icons/favicon.png
+
   meta {
     viewport = width=device-width, initial-scale=1.0, user-scalable=yes
   }
