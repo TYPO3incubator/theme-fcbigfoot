@@ -31,10 +31,9 @@ renderables:
       nextButtonLabel: 'Next step'
     type: Page
     identifier: page-1
-    label: 'Lorem ipsum dolor sit'
+    label: 'Looking for answers?'
     renderables:
       -
-        defaultValue: ''
         type: Text
         identifier: text-1
         properties:
@@ -52,7 +51,6 @@ renderables:
           -
             identifier: NotEmpty
       -
-        defaultValue: ''
         type: Email
         identifier: email-1
         properties:
@@ -65,7 +63,6 @@ renderables:
           -
             identifier: NotEmpty
       -
-        defaultValue: ''
         type: Textarea
         identifier: text-3
         properties:
