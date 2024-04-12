@@ -10855,7 +10855,8 @@ a {
   display: none;
 }
 
-input[type=text] {
+.form-group input[type=text],
+.form-group input[type=email] {
   min-height: 3rem;
 }
 

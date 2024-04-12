@@ -37,8 +37,10 @@
     display: none;
 }
 
-input[type=text] {
-    min-height: toRem(48);
+.form-group{
+    input[type=text], input[type=email] {
+        min-height: toRem(48);
+    }
 }
 
 textarea {
