@@ -14,6 +14,10 @@
                 <source>Search</source>
                 <target>Suche</target>
             </trans-unit>
+            <trans-unit id="indexedSearch.displayResults">
+                <source><![CDATA[Found <strong>%s</strong> results]]></source>
+                <source><![CDATA[<strong>%s</strong> Ergebnisse gefunden]]></source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
