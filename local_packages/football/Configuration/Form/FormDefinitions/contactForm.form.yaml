@@ -34,10 +34,9 @@ renderables:
     label: 'Lorem ipsum dolor sit'
     renderables:
       -
-        defaultValue: ''
+        defaultValue: 'Name *'
         type: Text
         identifier: text-1
-        label: Name
         properties:
           fluidAdditionalAttributes:
             minlength: '3'
@@ -52,10 +51,9 @@ renderables:
           -
             identifier: NotEmpty
       -
-        defaultValue: ''
+        defaultValue: 'E-Mail address *'
         type: Email
         identifier: email-1
-        label: 'Email address'
         properties:
           fluidAdditionalAttributes:
             required: required
@@ -65,10 +63,9 @@ renderables:
           -
             identifier: NotEmpty
       -
-        defaultValue: ''
-        type: Text
+        defaultValue: 'Subject *'
+        type: Textarea
         identifier: text-3
-        label: Subject
         properties:
           fluidAdditionalAttributes:
             minlength: '2'
@@ -78,7 +75,7 @@ renderables:
           -
             options:
               minimum: '2'
-              maximum: '60'
+              maximum: '600'
             identifier: StringLength
           -
             identifier: NotEmpty
