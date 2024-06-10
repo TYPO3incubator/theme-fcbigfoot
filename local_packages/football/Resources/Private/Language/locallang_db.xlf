@@ -92,6 +92,18 @@
                 <source>Image</source>
             </trans-unit>
             <!-- END: tx_football_domain_model_sponsor -->
+
+        <!-- BEGIN: tx_football_domain_model_person -->
+            <trans-unit id="tx_football_domain_model_person">
+                <source>Person</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_person.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_football_domain_model_person.image">
+                <source>Image</source>
+            </trans-unit>
+        <!-- END: tx_football_domain_model_person -->
         </body>
     </file>
 </xliff>

@@ -1,5 +1,5 @@
 TCEFORM.tt_content {
-    CType.keepItems = game_results,textmedia,cta,hero,sponsors,form_formframework,event_teaser,news_teaser,indexedsearch_pi2
+    CType.keepItems = game_results,textmedia,cta,hero,sponsors,form_formframework,event_teaser,news_teaser,indexedsearch_pi2,persons_overview
 
     header_layout {
         keepItems = 2,3,4,100
