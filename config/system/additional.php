@@ -3,13 +3,13 @@
 $dotenv = Dotenv\Dotenv::createMutable(__DIR__ . '/../../', '.env.dist');
 $dotenv->load();
 
-if (file_exists(__DIR__ . '/../../.env')) {
-    $dotenv = Dotenv\Dotenv::createMutable(__DIR__ . '/../../');
+if (\TYPO3\CMS\Core\Core\Environment::getContext() == 'Production') {
+    $dotenv = Dotenv\Dotenv::createMutable(__DIR__ . '/../../', '.env.prod');
     $dotenv->load();
 }
 
-if (\TYPO3\CMS\Core\Core\Environment::getContext() == 'Production') {
-    $dotenv = Dotenv\Dotenv::createMutable(__DIR__ . '/../../', '.env.prod');
+if (file_exists(__DIR__ . '/../../.env')) {
+    $dotenv = Dotenv\Dotenv::createMutable(__DIR__ . '/../../');
     $dotenv->load();
 }
 
