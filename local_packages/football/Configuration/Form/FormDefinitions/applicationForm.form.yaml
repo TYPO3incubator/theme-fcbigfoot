@@ -8,7 +8,7 @@ prototypeName: standard
 finishers:
   -
     options:
-      subject: '{text-3}'
+      subject: 'Application'
       recipients:
         contact@team4.surfcamp.typo3.com: SurfCamp-Team4
       senderAddress: '{email}'
@@ -113,6 +113,22 @@ renderables:
             placeholder: 'Email address'
         validators:
           - identifier: EmailAddress
+      -
+        type: FileUpload
+        identifier: fileupload
+        label: 'SEPA direct debit mandate *'
+        properties:
+          saveToFileMount: '1:/form_uploads/'
+          allowedMimeTypes:
+            - application/pdf
+        validators:
+          -
+            options:
+              minimum: 0B
+              maximum: 5M
+            identifier: FileSize
+          -
+            identifier: NotEmpty
       -
         type: Checkbox
         identifier: checkbox-1
