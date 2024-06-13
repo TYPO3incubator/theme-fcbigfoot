@@ -110,9 +110,10 @@ renderables:
         properties:
           elementDescription: ''
           fluidAdditionalAttributes:
-            placeholder: 'Email address'
+            placeholder: 'Email address *'
         validators:
           - identifier: EmailAddress
+          - identifier: NotEmpty
       -
         type: FileUpload
         identifier: fileupload
