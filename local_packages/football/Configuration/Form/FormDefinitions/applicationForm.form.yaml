@@ -119,7 +119,6 @@ renderables:
         identifier: fileupload
         label: 'SEPA direct debit mandate *'
         properties:
-          saveToFileMount: '1:/form_uploads/'
           allowedMimeTypes:
             - application/pdf
         validators:
