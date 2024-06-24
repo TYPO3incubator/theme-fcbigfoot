@@ -1,0 +1,230 @@
+[
+  {
+    "meta": {
+      "type": "soccer",
+      "league": "SurfCamp League",
+      "leagueId": "sfl24",
+      "season": "2024/2025"
+    },
+    "homeTeam": {
+      "id": "fcbf",
+      "name": "FC Bigfoot",
+      "iconUrl": "https://static.wixstatic.com/media/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png/v1/fill/w_578,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png"
+    },
+    "awayTeam": {
+      "id": "",
+      "name": "Luton Town FC",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Luton_Town_logo.svg/1920px-Luton_Town_logo.svg.png"
+    },
+    "datetime": "2024-02-29T15:00:00Z",
+    "location": "Super Feet Stadium",
+    "result": {
+      "home": 3,
+      "away": 0
+    }
+  },
+  {
+    "meta": {
+      "type": "soccer",
+      "league": "SurfCamp League",
+      "leagueId": "sfl24",
+      "season": "2024/2025"
+    },
+    "homeTeam": {
+      "id": "fcbf",
+      "name": "FC Bigfoot",
+      "iconUrl": "https://static.wixstatic.com/media/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png/v1/fill/w_578,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png"
+    },
+    "awayTeam": {
+      "id": "nhfs",
+      "name": "Nottingham Forrest",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/de/thumb/7/7e/Logo_Nottingham_Forest.svg/1024px-Logo_Nottingham_Forest.svg.png"
+    },
+    "datetime": "2024-03-05T15:30:00Z",
+    "location": "Super Feet Stadium",
+    "result": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  {
+    "meta": {
+      "type": "soccer",
+      "league": "SurfCamp League",
+      "leagueId": "sfl24",
+      "season": "2024/2025"
+    },
+    "homeTeam": {
+      "id": "",
+      "name": "Luton Town FC",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Luton_Town_logo.svg/1920px-Luton_Town_logo.svg.png"
+    },
+    "awayTeam": {
+      "id": "fcbf",
+      "name": "FC Bigfoot",
+      "iconUrl": "https://static.wixstatic.com/media/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png/v1/fill/w_578,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png"
+    },
+    "datetime": "2024-03-09T13:00:00Z",
+    "location": "Luton Bowl",
+    "result": {
+      "home": 2,
+      "away": 1
+    }
+  },
+  {
+    "meta": {
+      "type": "soccer",
+      "league": "SurfCamp League",
+      "leagueId": "sfl24",
+      "season": "2024/2025"
+    },
+    "homeTeam": {
+      "id": "fcbf",
+      "name": "FC Bigfoot",
+      "iconUrl": "https://static.wixstatic.com/media/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png/v1/fill/w_578,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png"
+    },
+    "awayTeam": {
+      "id": "byfc",
+      "name": "Burnley FC",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Burnley_FC_Logo.svg/1920px-Burnley_FC_Logo.svg.png"
+    },
+    "datetime": "2024-03-18T15:00:00Z",
+    "location": "Super Feet Stadium",
+    "result": {
+      "home": 13,
+      "away": 1
+    }
+  },
+  {
+    "meta": {
+      "type": "soccer",
+      "league": "SurfCamp League",
+      "leagueId": "sfl24",
+      "season": "2024/2025"
+    },
+    "homeTeam": {
+      "id": "wvwfc",
+      "name": "Wolverhampton Wanderers FC",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/en/f/fc/Wolverhampton_Wanderers.svg"
+    },
+    "awayTeam": {
+      "id": "fcbf",
+      "name": "FC Bigfoot",
+      "iconUrl": "https://static.wixstatic.com/media/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png/v1/fill/w_578,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png"
+    },
+    "datetime": "2024-03-21T18:00:00Z",
+    "location": "Super Feet Stadium",
+    "result": {
+      "home": 2,
+      "away": 1
+    }
+  },
+  {
+    "meta": {
+      "type": "soccer",
+      "league": "SurfCamp League",
+      "leagueId": "sfl24",
+      "season": "2024/2025"
+    },
+    "homeTeam": {
+      "id": "nhfs",
+      "name": "Nottingham Forrest",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/de/thumb/7/7e/Logo_Nottingham_Forest.svg/1024px-Logo_Nottingham_Forest.svg.png"
+    },
+    "awayTeam": {
+      "id": "fcbf",
+      "name": "FC Bigfoot",
+      "iconUrl": "https://static.wixstatic.com/media/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png/v1/fill/w_578,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png"
+    },
+    "datetime": "2024-04-02T15:30:00Z",
+    "location": "Woodland Arena",
+    "result": {
+      "home": 2,
+      "away": 2
+    }
+  },
+  {
+    "meta": {
+      "type": "soccer",
+      "league": "SurfCamp League",
+      "leagueId": "sfl24",
+      "season": "2024/2025"
+    },
+    "homeTeam": {
+      "id": "byfc",
+      "name": "Burnley FC",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Burnley_FC_Logo.svg/1920px-Burnley_FC_Logo.svg.png"
+    },
+    "awayTeam": {
+      "id": "fcbf",
+      "name": "FC Bigfoot",
+      "iconUrl": "https://static.wixstatic.com/media/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png/v1/fill/w_578,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png"
+    },
+    "datetime": "2024-04-09T15:00:00Z",
+    "location": "Burns' Power Plant",
+    "result": null
+  },
+  {
+    "meta": {
+      "type": "soccer",
+      "league": "SurfCamp League",
+      "leagueId": "sfl24",
+      "season": "2024/2025"
+    },
+    "homeTeam": {
+      "id": "wvwfc",
+      "name": "Wolverhampton Wanderers FC",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/en/f/fc/Wolverhampton_Wanderers.svg"
+    },
+    "awayTeam": {
+      "id": "fcbf",
+      "name": "FC Bigfoot",
+      "iconUrl": "https://static.wixstatic.com/media/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png/v1/fill/w_578,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png"
+    },
+    "datetime": "2024-04-16T14:30:00Z",
+    "location": "Wolverine Palace",
+    "result": null
+  },
+  {
+    "meta": {
+      "type": "soccer",
+      "league": "SurfCamp League",
+      "leagueId": "sfl24",
+      "season": "2024/2025"
+    },
+    "homeTeam": {
+      "id": "",
+      "name": "Everton FC",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg"
+    },
+    "awayTeam": {
+      "id": "fcbf",
+      "name": "FC Bigfoot",
+      "iconUrl": "https://static.wixstatic.com/media/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png/v1/fill/w_578,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png"
+    },
+    "datetime": "2024-04-29T17:30:00Z",
+    "location": "Super Feet Stadium",
+    "result": null
+  },
+  {
+    "meta": {
+      "type": "soccer",
+      "league": "SurfCamp League",
+      "leagueId": "sfl24",
+      "season": "2024/2025"
+    },
+    "homeTeam": {
+      "id": "fcbf",
+      "name": "FC Bigfoot",
+      "iconUrl": "https://static.wixstatic.com/media/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png/v1/fill/w_578,h_530,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/821b94_4114909f145a4a9bbd8eb84937a7a146~mv2.png"
+    },
+    "awayTeam": {
+      "id": "",
+      "name": "Everton FC",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg"
+    },
+    "datetime": "2024-05-13T14:30:00Z",
+    "location": "Never Ever Arena",
+    "result": null
+  }
+]
