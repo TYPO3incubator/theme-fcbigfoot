@@ -11851,3 +11851,8 @@ textarea.form-control {
   right: -0.0625rem;
   transform: rotate(-45deg);
 }
+
+.sponsor-grid {
+  flex-wrap: wrap;
+  gap: 1rem;
+}

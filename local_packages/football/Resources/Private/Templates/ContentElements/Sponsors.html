@@ -3,9 +3,9 @@
 <div class="py-5 text-center">
     <h2 class="mb-4">{data.header}</h2>
 
-    <div class="d-md-flex justify-content-center">
+    <div class="d-md-flex justify-content-center sponsor-grid">
         <f:for each="{sponsors}" as="sponsor">
-            <f:link.typolink parameter="{sponsor.data.url}" class="px-3">
+            <f:link.typolink parameter="{sponsor.data.url}">
                 <f:image image="{sponsor.image.0}" alt="{sponsor.data.title}" width="200" height="auto" treatIdAsReference="1" />
             </f:link.typolink>
         </f:for>
