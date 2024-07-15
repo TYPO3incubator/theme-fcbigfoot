@@ -49,7 +49,7 @@ styles.content {
         # cat=content/cTextmedia/b1; type=int+; label= Max Image/Media Width: This indicates that maximum number of pixels (width) a block of media elements inserted as content is allowed to consume
         maxW = 600
         # cat=content/cTextmedia/b2; type=int+; label= Max Image/Media Width (Text): Same as above, but this is the maximum width when text is wrapped around an block of media elements. Default is 50% of the normal Max Media Item Width
-        maxWInText = 300
+        maxWInText = 600
 
         # cat=content/cTextmedia/g1; type=int[0-100]; label= Advanced, Column space: Horizontal distance between media elements in a block in content elements of type "Media & Images". If you change this manually in your CSS, you need to adjust this setting accordingly
         columnSpacing = 10
