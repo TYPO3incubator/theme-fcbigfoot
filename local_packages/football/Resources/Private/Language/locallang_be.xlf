@@ -22,7 +22,7 @@
                 <source>Normal</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.cta">
-                <source>Normal</source>
+                <source>Call to Action</source>
             </trans-unit>
             <trans-unit id="hero.description">
                 <source>Description</source>
