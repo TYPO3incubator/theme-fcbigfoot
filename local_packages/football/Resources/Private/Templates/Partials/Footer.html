@@ -5,7 +5,9 @@
             <div class="footer--menu-container">
                 <f:render partial="FooterMenu" arguments="{_all}"/>
                 <f:if condition="{footer.0.data.data_privacy}">
-                    <f:link.typolink parameter="{footer.0.data.data_privacy}" class="footer-menu--link"></f:link.typolink>
+                    <li class="footer-menu--item">
+                        <f:link.typolink parameter="{footer.0.data.data_privacy}" class="footer-menu--link"></f:link.typolink>
+                    </li>
                 </f:if>
             </div>
         </div>
