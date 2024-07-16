@@ -11795,7 +11795,6 @@ textarea.form-control {
   position: absolute;
   bottom: 1.875rem;
   left: 1.25rem;
-  z-index: 3;
 }
 
 .event--title,
