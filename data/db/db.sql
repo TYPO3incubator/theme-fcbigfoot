@@ -1,4 +1,3 @@
-/*!999999\- enable the sandbox mode */ 
 -- MariaDB dump 10.19  Distrib 10.11.8-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: db    Database: db
@@ -352,7 +351,7 @@ CREATE TABLE `cache_rootline` (
 LOCK TABLES `cache_rootline` WRITE;
 /*!40000 ALTER TABLE `cache_rootline` DISABLE KEYS */;
 INSERT INTO `cache_rootline` VALUES
-(15,'1__0_0_1_1',1723601951,'xœMMrÃ …ïÂ	‚Ó_å]e“ì5ÄÈ.#Üf:¹{e»¤ìô>Ošg@ÃƒÝÁ@#S‚=¨ÑYuXØªò¦´¨wP¼ŸiÂøïÐ»¿REu¡‰\rSÁÏB{Ñ	ž@}Äa%7˜O©6÷@Ö™\n½€òæ3—DŸÎZ\nH–¬œ˜ÝðXû\nŠ‚­É¨Ž°Ÿb«t-iôÍâ=ÇS¾Œ¦§TeØxåÛH¥\rÉ8ŸÚ:×«Ãqù.NAZŸíòÿø×‡K˜Ó#W…1ÆªrÝT£/¼‘:.¦½Êu¸u€AŽEO3ùõz1,\'sB´Ô™ìeÏýþ™™;');
+(15,'1__0_0_1_1',1723601951,'xï¿½Mï¿½Mrï¿½ ï¿½ï¿½ï¿½	ï¿½ï¿½_ï¿½]eï¿½ï¿½5ï¿½ï¿½.#ï¿½f:ï¿½{eï¿½ï¿½ï¿½ï¿½>Oï¿½g@Ãï¿½ï¿½ï¿½@#Sï¿½=ï¿½ï¿½YuXØªò¦´¨wPï¿½ï¿½iï¿½ï¿½ï¿½Ð»ï¿½REuï¿½ï¿½\rSï¿½ï¿½B{ï¿½	ï¿½@}ï¿½a%7ï¿½Oï¿½6ï¿½@Ö™\nï¿½ï¿½ï¿½ï¿½3ï¿½Dï¿½ï¿½Z\nHï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½bï¿½t-iï¿½ï¿½ï¿½=ï¿½Sï¿½ï¿½ï¿½ï¿½Teï¿½xï¿½ï¿½Hï¿½\rï¿½8ï¿½ï¿½:×«ï¿½qï¿½.NAZï¿½ï¿½ï¿½ï¿½ï¿½×‡Kï¿½ï¿½#Wï¿½1Æªrï¿½Tï¿½/ï¿½ï¿½:.ï¿½ï¿½ï¿½uï¿½uï¿½Aï¿½EO3ï¿½ï¿½z1,\'sBï¿½Ô™ï¿½eï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;');
 /*!40000 ALTER TABLE `cache_rootline` ENABLE KEYS */;
 UNLOCK TABLES;
 
