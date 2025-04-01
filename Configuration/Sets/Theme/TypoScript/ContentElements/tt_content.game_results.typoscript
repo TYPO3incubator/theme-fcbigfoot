@@ -1,0 +1,12 @@
+tt_content.game_results =< lib.contentElement
+tt_content.game_results {
+    templateName = GameResults
+    dataProcessing {
+        10 = json-processor
+        10 {
+            if.isTrue.field = fcbigfoot_file_link
+            jsonFile.field = fcbigfoot_file_link
+            as = results
+        }
+    }
+}

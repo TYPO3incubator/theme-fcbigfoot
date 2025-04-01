@@ -1,0 +1,32 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<f:render partial="Header/All" arguments="{_all}" />
+<f:if condition="{data.bodytext}">
+    <f:format.html>{data.bodytext}</f:format.html>
+</f:if>
+<f:if condition="{records}">
+    <div class="teaser-group">
+        <div class="teaser-group--container">
+            <f:for each="{records}" as="record" iteration="iterator">
+                <div class="teaser-item">
+                    <f:if condition="{record.image.0}">
+                        <f:image class="teaser-item--image" image="{record.image.0}" width="800" />
+                    </f:if>
+                    <div class="teaser-item--contents">
+                        <h3 class="teaser-item--title">
+                            {record.data.name}
+                        </h3>
+                        <f:if condition="{record.data.link}">
+                            <f:link.typolink class="teaser-item--button" parameter="{record.data.link}">
+                                {f:translate(key: 'teaserGroup.learnMore', extensionName: 'fcbigfoot')}
+                                <span class="icon-arrow"></span>
+                            </f:link.typolink>
+                        </f:if>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+    </div>
+</f:if>
+
+</html>

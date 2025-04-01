@@ -1,0 +1,5 @@
+name: typo3-incubator/theme-fcbigfoot
+label: FC Bigfoot
+dependencies:
+  - typo3/form
+  - typo3/indexed-search

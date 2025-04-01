@@ -1,0 +1,23 @@
+.persons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.person {
+    display: grid;
+    gap: 1rem;
+    &--image {
+        display: block;
+        max-height: 300px;
+        width: 100%;
+        border-radius: .25rem;
+        object-fit: cover;
+        object-position: top;
+    }
+    &--name {
+        font-size: toRem(20);
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+}

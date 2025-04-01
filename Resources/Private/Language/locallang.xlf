@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-04-07UTC20:18:290">
+        <header/>
+        <body>
+            <trans-unit id="hero.title">
+                <source>Hero</source>
+            </trans-unit>
+            <trans-unit id="hero.description">
+                <source>Create a hero content element</source>
+            </trans-unit>
+
+            <trans-unit id="teaserGroup.learnMore">
+                <source>Learn more</source>
+            </trans-unit>
+
+            <trans-unit id="indexedSearch.placeholder">
+                <source>Search</source>
+            </trans-unit>
+            <trans-unit id="indexedSearch.displayResults">
+                <source><![CDATA[Found <strong>%s</strong> results]]></source>
+            </trans-unit>
+
+            <trans-unit id="socialmedia.discord.label">
+                <source>Discord</source>
+            </trans-unit>
+            <trans-unit id="socialmedia.facebook.label">
+                <source>Facebook</source>
+            </trans-unit>
+            <trans-unit id="socialmedia.instagram.label">
+                <source>Instagram</source>
+            </trans-unit>
+            <trans-unit id="socialmedia.linkedin.label">
+                <source>LinkedIn</source>
+            </trans-unit>
+            <trans-unit id="socialmedia.mastodon.label">
+                <source>Mastodon</source>
+            </trans-unit>
+            <trans-unit id="socialmedia.threads.label">
+                <source>Threads</source>
+            </trans-unit>
+            <trans-unit id="socialmedia.x.label">
+                <source>X</source>
+            </trans-unit>
+            <trans-unit id="socialmedia.xing.label">
+                <source>XING</source>
+            </trans-unit>
+            <trans-unit id="socialmedia.youtube.label">
+                <source>YouTube</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

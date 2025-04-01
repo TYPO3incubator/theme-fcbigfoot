@@ -1,45 +1,18 @@
-# TYPO3 Surfcamp Team 4 (Sports Club)
+# TYPO3 FC BIGFOOT
 
-This Git repository is intended for use by our dedicated teams at the [TYPO3 Surfcamp](https://surfcamp.typo3.com/).
+## Setup
 
-The project is based on the current development branch of TYPO3 v13.x, using Composer. The configuration happens via `.env` thanks to the underlying package `vlucas/phpdotenv`.
+In order to setup the extension you need to install the extension with composer or via the extension manager in TYPO3
 
-## Requirements
-
-* having Docker installed locally (see https://docs.docker.com/get-docker/)
-* having DDEV installed locally (see https://ddev.readthedocs.io/en/stable/#installation)
-
-
-## Initialization
-
-```sh
-ddev start
-ddev composer install
+- ```composer req typo3-incubator/theme-fcbigfoot```
+- add dependency to ```config.yaml```
 ```
-
-## Credentials
-
-- Backend: https://surfcamp-team4.ddev.site/typo3
-- Username: `admin`
-- Password: `John3:16`
-
-### Downloading database and files
-
-```sh
-# HEADS UP: All files in the local `public/fileadmin/` will be overridden, that means:
-# all files that are not present in `data/files/public/fileadmin/` will be deleted from fileadmin
-ddev pull assets
+dependencies:
+  - typo3-incubator/theme-fcbigfoot
 ```
+- ...
 
-### Update local database and files
-
-```sh
-# HEADS UP: All files in the local `data/files/public/fileadmin/` will be overridden, that means:
-# all files that are not present in `public/fileadmin/` will be deleted from fileadmin
-ddev push assets
-```
-
-### Frontend build process
+## Frontend build process
 Run into the root of the project the following command to install all required Node dependencies
 ```sh
 ddev composer npm-install
@@ -53,4 +26,12 @@ ddev composer watch-assets
 ddev composer compile-css
 ddev composer compile-js
 ddev composer compile-assets
+```
+
+## Development Setup
+
+```bash
+ddev start
+ddev composer install
+ddev exec .build/bin/typo3 setup
 ```

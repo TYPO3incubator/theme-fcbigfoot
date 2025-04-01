@@ -1,0 +1,144 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: applicationForm
+label: 'Application Form'
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Application'
+      recipients:
+      senderAddress: '{email}'
+      senderName: '{name}'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      title: 'Contact '
+    identifier: EmailToReceiver
+  -
+    options:
+      message: 'Your message has been sent.'
+      contentElementUid: ''
+    identifier: Confirmation
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        type: Text
+        identifier: name
+        label: 'Name, Firstname'
+        defaultValue: ''
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Name, Firstname *'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        type: Text
+        identifier: street
+        label: Street
+        defaultValue: ''
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Street *'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        type: Text
+        identifier: zip
+        label: 'Zip Code'
+        defaultValue: ''
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Zip Code *'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        type: Text
+        identifier: city
+        label: City
+        defaultValue: ''
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'City *'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        type: Date
+        identifier: birthday
+        label: Birthday
+        defaultValue: ''
+        properties:
+          fluidAdditionalAttributes:
+            step: 1
+            required: required
+            placeholder: 'Birthday DD.MM.YYYY'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        type: Text
+        identifier: phone
+        label: Phone
+        defaultValue: ''
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Phone
+      -
+        type: Email
+        identifier: email
+        label: 'Email address'
+        defaultValue: ''
+        properties:
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            placeholder: 'Email address *'
+        validators:
+          - identifier: EmailAddress
+          - identifier: NotEmpty
+      -
+        type: FileUpload
+        identifier: fileupload
+        label: 'SEPA direct debit mandate *'
+        properties:
+          allowedMimeTypes:
+            - application/pdf
+        validators:
+          -
+            options:
+              minimum: 0B
+              maximum: 5M
+            identifier: FileSize
+          -
+            identifier: NotEmpty
+      -
+        type: Checkbox
+        identifier: checkbox-1
+        label: 'Accept data privacy note'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Please check this'
+        validators:
+          -
+            identifier: NotEmpty

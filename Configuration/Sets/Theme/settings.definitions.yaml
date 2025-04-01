@@ -1,0 +1,99 @@
+categories:
+  FCBigfoot:
+    label: 'FC Bigfoot Theme'
+  FCBigfoot.logo:
+    label: 'Logo'
+    parent: FCBigfoot
+  FCBigfoot.socialmedia:
+    label: 'Social Media'
+    parent: FCBigfoot
+  FCBigfoot.pages:
+    label: 'Pages'
+    parent: FCBigfoot
+  FCBigfoot.footer:
+    label: 'Footer'
+    parent: FCBigfoot
+
+settings:
+  fcbigfoot.logo:
+    label: 'Logo'
+    category: FCBigfoot.logo
+    type: string
+    default: 'EXT:fcbigfoot/Resources/Public/Images/Logos/logo.svg'
+  fcbigfoot.favicon:
+    label: 'Favicon'
+    category: FCBigfoot.logo
+    type: string
+    default: 'EXT:fcbigfoot/Resources/Public/Icons/favicon.ico'
+
+  fcbigfoot.socialmedia.channels.discord.link:
+    label: 'Discord Link'
+    description: 'Link to your Discord profile'
+    category: FCBigfoot.socialmedia
+    type: string
+    default: ''
+  fcbigfoot.socialmedia.channels.facebook.link:
+    label: 'Facebook Link'
+    description: 'Link to your Facebook profile'
+    category: FCBigfoot.socialmedia
+    type: string
+    default: ''
+  fcbigfoot.socialmedia.channels.instagram.link:
+    label: 'Instagram Link'
+    description: 'Link to your Instagram profile'
+    category: FCBigfoot.socialmedia
+    type: string
+    default: ''
+  fcbigfoot.socialmedia.channels.linkedin.link:
+    label: 'LinkedIn Link'
+    description: 'Link to your LinkedIn profile'
+    category: FCBigfoot.socialmedia
+    type: string
+    default: ''
+  fcbigfoot.socialmedia.channels.mastodon.link:
+    label: 'Mastodon Link'
+    description: 'Link to your Mastodon profile'
+    category: FCBigfoot.socialmedia
+    type: string
+    default: ''
+  fcbigfoot.socialmedia.channels.threads.link:
+    label: 'Threads Link'
+    description: 'Link to your Threads profile'
+    category: FCBigfoot.socialmedia
+    type: string
+    default: ''
+  fcbigfoot.socialmedia.channels.x.link:
+    label: 'X Link'
+    description: 'Link to your X profile'
+    category: FCBigfoot.socialmedia
+    type: string
+    default: ''
+  fcbigfoot.socialmedia.channels.xing.link:
+    label: 'XING Link'
+    description: 'Link to your XING profile'
+    category: FCBigfoot.socialmedia
+    type: string
+    default: ''
+  fcbigfoot.socialmedia.channels.youtube.link:
+    label: 'YouTube Link'
+    description: 'Link to your YouTube channel'
+    category: FCBigfoot.socialmedia
+    type: string
+    default: ''
+
+  fcbigfoot.pages.contact:
+    label: 'Contact Page Uid'
+    category: FCBigfoot.pages
+    type: int
+    default: 0
+  fcbigfoot.pages.privacy:
+    label: 'Privacy Policy Page Uid'
+    category: FCBigfoot.pages
+    type: int
+    default: 0
+
+  fcbigfoot.copyright:
+    label: 'Copyright'
+    category: FCBigfoot.footer
+    type: string
+    default: 'The TYPO3 Community'

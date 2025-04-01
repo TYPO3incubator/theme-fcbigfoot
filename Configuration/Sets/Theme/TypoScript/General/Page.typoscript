@@ -1,0 +1,36 @@
+page = PAGE
+page {
+    shortcutIcon = {$fcbigfoot.favicon}
+
+    10 = PAGEVIEW
+    10 {
+        paths {
+            100 = EXT:fcbigfoot/Resources/Private/Templates/
+        }
+
+        variables {
+            parentPageTitle = TEXT
+            parentPageTitle.data = levelfield:-1:title
+        }
+
+        dataProcessing {
+            10 = menu
+            10 {
+                levels = 2
+                as = mainMenu
+            }
+        }
+    }
+
+    meta {
+        viewport = width=device-width, initial-scale=1.0, user-scalable=yes
+    }
+
+    includeCSS {
+        theme = EXT:fcbigfoot/Resources/Public/Css/index.css
+    }
+
+    includeJSFooter {
+        index = EXT:fcbigfoot/Resources/Public/JavaScript/index.js
+    }
+}

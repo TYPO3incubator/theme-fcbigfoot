@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-04-07UTC20:18:290">
+        <header/>
+        <body>
+            <!--- BEGIN: New Content Element Groups -->
+            <trans-unit id="content_group.fcbigfoot">
+                <source>FC Bigfoot Theme</source>
+            </trans-unit>
+
+            <!--- BEGIN: tt_content -->
+            <trans-unit id="tt_content.header_layout.1">
+                <source>Heading 1</source>
+            </trans-unit>
+            <trans-unit id="tt_content.header_layout.2">
+                <source>Heading 2</source>
+            </trans-unit>
+            <trans-unit id="tt_content.header_layout.3">
+                <source>Heading 3</source>
+            </trans-unit>
+            <trans-unit id="tt_content.header_layout.4">
+                <source>Heading 4</source>
+            </trans-unit>
+            <trans-unit id="tt_content.header_layout.5">
+                <source>Heading 5</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fcbigfoot_file_link">
+                <source>Link to JSON-File</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fcbigfoot_game_results_mode">
+                <source>Output style of data</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fcbigfoot_game_results_mode.slider">
+                <source>Show results of the latest games (Slider)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fcbigfoot_game_results_mode.table">
+                <source>Show all results (Table)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fcbigfoot_button_link">
+                <source>Button link</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fcbigfoot_button_text">
+                <source>Button text</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fcbigfoot_teaser">
+                <source>Teaser</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fcbigfoot_buttons">
+                <source>Buttons</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fcbigfoot_sponsors">
+                <source>Sponsors</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fcbigfoot_persons">
+                <source>Persons</source>
+            </trans-unit>
+
+            <!--- BEGIN: Backend Layouts -->
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.home">
+                <source>Homepage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.hero">
+                <source>Hero</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.game">
+                <source>Game Teaser</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.cta">
+                <source>Call to Action</source>
+            </trans-unit>
+
+            <!--- BEGIN: CTypes -->
+            <trans-unit id="CType.cta.title">
+                <source>CTA</source>
+            </trans-unit>
+            <trans-unit id="CType.cta.description">
+                <source>Add a new cta content element</source>
+            </trans-unit>
+            <trans-unit id="CType.teaser_group.title">
+                <source>Teaser Group</source>
+            </trans-unit>
+            <trans-unit id="CType.teaser_group.description">
+                <source>Add a new teaser group content element</source>
+            </trans-unit>
+            <trans-unit id="CType.game_results.title">
+                <source>Game Results</source>
+            </trans-unit>
+            <trans-unit id="CType.game_results.description">
+                <source>Get Results for your team</source>
+            </trans-unit>
+            <trans-unit id="CType.sponsors.title">
+                <source>Sponsors</source>
+            </trans-unit>
+            <trans-unit id="CType.sponsors.description">
+                <source>Add a new sponsors content element</source>
+            </trans-unit>
+            <trans-unit id="CType.persons_overview.title">
+                <source>Persons Overview</source>
+            </trans-unit>
+            <trans-unit id="CType.persons_overview.description">
+                <source>Overview of relevant persons in your club</source>
+            </trans-unit>
+            <trans-unit id="CType.news_teaser.title">
+                <source>News Teaser</source>
+            </trans-unit>
+            <trans-unit id="CType.news_teaser.description">
+                <source>Placeholder for the news teaser</source>
+            </trans-unit>
+            <trans-unit id="CType.hero.title">
+                <source>Hero</source>
+            </trans-unit>
+            <trans-unit id="CType.hero.description">
+                <source>Add a new hero content element</source>
+            </trans-unit>
+
+            <!--- BEGIN: tx_fcbigfoot_domain_model_button -->
+            <trans-unit id="tx_fcbigfoot_domain_model_button">
+                <source>Button</source>
+            </trans-unit>
+            <trans-unit id="tx_fcbigfoot_domain_model_button.label">
+                <source>Label</source>
+            </trans-unit>
+            <trans-unit id="tx_fcbigfoot_domain_model_button.link">
+                <source>Link</source>
+            </trans-unit>
+
+            <!-- BEGIN: tx_fcbigfoot_domain_model_person -->
+            <trans-unit id="tx_fcbigfoot_domain_model_person">
+                <source>Person</source>
+            </trans-unit>
+            <trans-unit id="tx_fcbigfoot_domain_model_person.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_fcbigfoot_domain_model_person.image">
+                <source>Image</source>
+            </trans-unit>
+
+            <!-- BEGIN: tx_fcbigfoot_domain_model_teaser -->
+            <trans-unit id="tx_fcbigfoot_domain_model_teaser">
+                <source>Teaser</source>
+            </trans-unit>
+            <trans-unit id="tx_fcbigfoot_domain_model_teaser.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_fcbigfoot_domain_model_teaser.image">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="tx_fcbigfoot_domain_model_teaser.link">
+                <source>Link</source>
+            </trans-unit>
+
+            <!-- BEGIN: tx_fcbigfoot_domain_model_sponsor -->
+            <trans-unit id="tx_fcbigfoot_domain_model_sponsor">
+                <source>Sponsor</source>
+            </trans-unit>
+            <trans-unit id="tx_fcbigfoot_domain_model_sponsor.url">
+                <source>URL</source>
+            </trans-unit>
+            <trans-unit id="tx_fcbigfoot_domain_model_sponsor.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_fcbigfoot_domain_model_sponsor.image">
+                <source>Image</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

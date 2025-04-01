@@ -1,0 +1,3 @@
+@import './TypoScript/General/*.typoscript'
+@import './TypoScript/Helper/*.typoscript'
+@import './TypoScript/ContentElements/*.typoscript'

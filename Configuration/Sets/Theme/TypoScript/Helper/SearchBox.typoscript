@@ -1,0 +1,21 @@
+lib.searchBox = USER
+lib.searchBox {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = IndexedSearch
+    pluginName = Pi2
+    vendorName = TYPO3\CMS
+    switchableControllerActions {
+        Search {
+            1 = form
+            2 = search
+        }
+    }
+    features {
+        requireCHashArgumentForActionArguments = 0
+    }
+    view < plugin.tx_indexedsearch.view
+    view.partialRootPaths.10 = EXT:fcbigfoot/Resources/Private/Templates/Plugins/IndexedSearch/Header/Partials
+    view.templateRootPaths.10 = EXT:fcbigfoot/Resources/Private/Templates/Plugins/IndexedSearch/Header/Templates
+
+    settings =< plugin.tx_indexedsearch.settings
+}

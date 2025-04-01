@@ -1,0 +1,4 @@
+tt_content.news_teaser =< lib.contentElement
+tt_content.news_teaser {
+    templateName = NewsTeaser
+}

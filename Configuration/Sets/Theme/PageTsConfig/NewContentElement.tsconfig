@@ -1,0 +1,3 @@
+mod.wizards.newContentElement.wizardItems {
+    fcbigfoot.header = LLL:EXT:fcbigfoot/Resources/Private/Language/locallang_db.xlf:content_group.fcbigfoot
+}

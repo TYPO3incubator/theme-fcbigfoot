@@ -1,0 +1,107 @@
+.ce-gallery {
+  figure {
+    margin-block-end: 1rem;
+
+    .ce-center & {
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+    }
+  }
+
+  img {
+    border-radius: .25rem;;
+    display: block;
+  }
+}
+
+@media (min-width: 500px) {
+
+  .ce-intext {
+
+    &::after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+
+    &.ce-nowrap {
+      display: flex;
+      justify-content: space-between;
+
+      .ce-bodytext {
+        width: calc(50% - (#{$gallery-gutter-width} / 2));
+      }
+
+      &.ce-right {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .ce-gallery {
+
+    .ce-intext & {
+      width: calc(50% + (#{$gallery-gutter-width} / 2));
+    }
+
+    // use padding for flexbox
+    .ce-left:not(.ce-nowrap) & {
+      float: inline-start;
+      padding-inline-end: $gallery-gutter-width;
+    }
+
+    .ce-right:not(.ce-nowrap) & {
+      float: inline-end;
+      padding-inline-start: $gallery-gutter-width;
+    }
+
+    .ce-nowrap.ce-left & {
+      padding-inline-end: $gallery-gutter-width;
+    }
+
+    .ce-nowrap.ce-right & {
+      padding-inline-start: $gallery-gutter-width;
+    }
+  }
+}
+
+@media (min-width: 850px) {
+
+  .ce-gallery {
+    // if columns greater 1
+    &:not([data-ce-columns='1']) {
+
+      .ce-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &::after {
+          content: '';
+          flex: auto;
+        }
+      }
+
+      .ce-column {
+        width: 50%;
+        padding-block: 0;
+        padding-inline: calc(#{$gallery-gutter-width} / 2);
+
+        &:first-child {
+          padding-inline-start: 0;
+        }
+
+        &:last-child {
+          padding-inline-end: 0;
+        }
+      }
+    }
+
+    &[data-ce-columns='3'] {
+
+      .ce-column {
+        width: 33.333%;
+      }
+    }
+  }
+}

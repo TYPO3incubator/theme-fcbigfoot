@@ -1,75 +1,64 @@
 const gulp = require('gulp');
-const concat = require('gulp-concat');
 const terser = require('gulp-terser');
 const sourcemaps = require('gulp-sourcemaps');
-const {src, dest} = require('gulp');
 const minify = require('gulp-minify');
-const {watch} = require('gulp');
-const concatCss = require('gulp-concat-css');
 const sass = require('gulp-sass')(require('sass'));
 const esbuild = require('gulp-esbuild');
 
 /**
- * Theme Path
- */
-const themePath = './local_packages/football/';
-
-/**
- * all Js Files
- *
- * the order of explicit added filenames is important
- * if you also use a *-selector the file will not be included twice
- *
- * @type {string[]}
+ * JavaScript Paths
  */
 const jsPath = [
-    themePath + 'Resources/Private/JavaScript/Src/*.js', //add custom scripts
+    `./Resources/Private/JavaScript/Src/*.js`, // Add custom scripts
 ];
 
 function jsTask() {
-    return src(jsPath)
+    return gulp.src(jsPath)
         .pipe(sourcemaps.init())
         .pipe(esbuild({
             outfile: 'index.js',
-            bundle: true
+            bundle: true,
         }))
         .pipe(terser())
         .pipe(sourcemaps.write('.'))
         .pipe(minify({
-            ext: {
-                min: '.min.js'
-            },
-            ignoreFiles: ['-min.js']
+            ext: { min: '.min.js' },
+            ignoreFiles: ['-min.js'],
         }))
-        .pipe(dest(themePath + 'Resources/Public/JavaScript/'));
+        .pipe(gulp.dest(`./Resources/Public/JavaScript/`));
 }
 
 exports.jsTask = jsTask;
 
 /**
- * SCSS compiler
- *
- * @type {string[]}
+ * SCSS Compiler
  */
-const scssSrcFile = themePath + 'Resources/Private/Scss/index.scss';
+const scssSrcFile = `./Resources/Private/Scss/index.scss`;
 
 function scssTask() {
-    return src(scssSrcFile)
+    return gulp.src(scssSrcFile)
         .pipe(sass({
-            includePaths: ['./node_modules/']
-        }))
-        .pipe(sourcemaps.init())
-        .pipe(concatCss('index.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(dest(themePath + 'Resources/Public/Css/'))
+            silenceDeprecations: [
+                'import',
+                'global-builtin',
+                'mixed-decls',
+                'color-functions',
+            ]
+        }).on('error', sass.logError))
+        .pipe(gulp.dest(`./Resources/Public/Css/`));
 }
 
 exports.scssTask = scssTask;
 
 /**
- * Assets Watcher
+ * Watcher Task
  */
-exports.watch = function () {
-    watch(themePath + 'Resources/Private/Scss/**/*.scss', scssTask);
-    watch(themePath + 'Resources/Private/JavaScript/**/*.js', jsTask);
-};
+function watchTask() {
+    gulp.watch(`./Resources/Private/Scss/**/*.scss`, scssTask);
+    gulp.watch(`./Resources/Private/JavaScript/**/*.js`, jsTask);
+}
+
+exports.watch = watchTask;
+
+// Default Task
+exports.default = gulp.series(gulp.parallel(jsTask, scssTask), watchTask);
