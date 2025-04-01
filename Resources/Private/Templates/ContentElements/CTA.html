@@ -1,0 +1,19 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<div class="call-to-action py-5">
+    <div class="container d-md-flex align-items-center text-center text-md-start">
+        <div class="text-uppercase">
+            <p class="mb-0 text-white-50">{data.subheader}</p>
+            <h3 class="fs-1">{data.header}</h3>
+        </div>
+        <f:if condition="{buttons}">
+            <f:for each="{buttons}" as="button" iteration="iterator">
+                <f:link.typolink parameter="{button.data.link}" class="btn btn-primary me-2 {f:if(condition: iterator.isFirst, then: 'ms-md-auto')}">
+                    {button.data.label}
+                </f:link.typolink>
+            </f:for>
+        </f:if>
+    </div>
+</div>
+
+</html>

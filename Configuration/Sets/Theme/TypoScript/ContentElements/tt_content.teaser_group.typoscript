@@ -1,0 +1,24 @@
+tt_content.teaser_group =< lib.contentElement
+tt_content.teaser_group {
+    templateName = TeaserGroup
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        10 {
+            table = tx_fcbigfoot_domain_model_teaser
+            pidInList.field = pid
+            where {
+                data = field:uid
+                intval = 1
+                wrap = parentid=|
+            }
+            orderBy = sorting
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10 {
+                    references.fieldName = image
+                    as = image
+                }
+            }
+        }
+    }
+}

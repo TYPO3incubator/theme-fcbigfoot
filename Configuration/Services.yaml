@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  TYPO3Incubator\ThemeFCBigfoot\:
+    resource: '../Classes/*'
+
+  TYPO3Incubator\ThemeFCBigfoot\DataProcessing\JsonProcessor:
+    public: true
+    tags:
+      - { name: 'data.processor', identifier: 'json-processor' }

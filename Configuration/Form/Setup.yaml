@@ -1,0 +1,7 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowSaveToExtensionPaths: false
+        allowedExtensionPaths:
+          10: EXT:fcbigfoot/Configuration/Form/FormDefinitions/

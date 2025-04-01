@@ -1,0 +1,5 @@
+indexedsearch:
+  view:
+    templateRootPath: 'EXT:fcbigfoot/Resources/Private/Templates/Plugins/IndexedSearch/Templates/'
+    partialRootPath: 'EXT:fcbigfoot/Resources/Private/Templates/Plugins/IndexedSearch/Partials/'
+    layoutRootPath: 'EXT:fcbigfoot/Resources/Private/Templates/Plugins/IndexedSearch/Layouts/'

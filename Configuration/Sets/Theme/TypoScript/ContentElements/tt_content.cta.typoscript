@@ -1,0 +1,14 @@
+tt_content.cta =< lib.contentElement
+tt_content.cta {
+    templateName = CTA
+    dataProcessing.10 = database-query
+    dataProcessing.10 {
+        if.isTrue.field = fcbigfoot_buttons
+        table = tx_fcbigfoot_domain_model_button
+        pidInList.field = pid
+        where = {#parentid}=###uid###
+        markers.uid.field = uid
+        orderBy = uid
+        as = buttons
+    }
+}

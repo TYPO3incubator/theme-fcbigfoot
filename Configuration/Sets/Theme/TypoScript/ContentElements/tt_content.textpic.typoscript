@@ -1,0 +1,18 @@
+tt_content.textpic =< lib.contentElement
+tt_content.textpic {
+    templateName = TextPic
+    dataProcessing {
+        10 = files
+        10 {
+            references.fieldName = image
+        }
+        20 = gallery
+        20 {
+            maxGalleryWidth = 600
+            maxGalleryWidthInText = 600
+            columnSpacing = 10
+            borderWidth = borderWidth
+            borderPadding = 0
+        }
+    }
+}

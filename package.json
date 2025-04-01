@@ -1,24 +1,20 @@
 {
-  "name": "footbal.compiler",
+  "name": "theme-fcbigfoot",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Kostandina Greço",
-  "license": "ISC",
+  "author": "The TYPO3 Community",
+  "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-concat-css": "^3.1.0",
     "gulp-cssnano": "^2.1.3",
-    "gulp-esbuild": "^0.12.0",
+    "gulp-esbuild": "^0.14.0",
     "gulp-minify": "^3.1.0",
-    "gulp-sass": "^5.1.0",
+    "gulp-sass": "^6.0.1",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.1.0",
-    "sass": "^1.58.0"
+    "sass": "^1.86.1"
   },
   "dependencies": {
     "@splidejs/splide": "^4.1.4",

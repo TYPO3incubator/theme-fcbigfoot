@@ -1,0 +1,42 @@
+.form-check {
+    padding-left: 0;
+    margin: toRem(15) 0;
+}
+
+.form-check-label, .form-label {
+    font-family: $font-primary;
+    color: $color__primary--dark-blue;
+}
+
+.form-check-label {
+    font-size: toRem(12);
+    font-weight: 300;
+
+    span {
+        padding-left: toRem(12);
+    }
+}
+
+.form-control {
+    border-radius: 0;
+    font-size: toRem(15);
+    font-weight: 300;
+}
+
+.required {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+
+    input[type=text], input[type=email] {
+        min-height: toRem(48);
+    }
+}
+
+textarea {
+    &.form-control {
+        min-height: toRem(142);
+    }
+}

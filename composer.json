@@ -1,68 +1,58 @@
 {
-    "name": "typo3/site-surfcamp-template",
-    "type": "project",
+    "name": "typo3-incubator/theme-fcbigfoot",
+    "description": "FC Bigfoot Football Club Theme",
+    "type": "typo3-cms-extension",
     "license": "GPL-2.0-or-later",
     "authors": [
-        {
-            "name": "TYPO3 CMS Core Team",
-            "role": "Developer",
-            "homepage": "https://forge.typo3.org/projects/typo3cms-core"
-        },
         {
             "name": "The TYPO3 Community",
             "role": "Contributor",
             "homepage": "https://typo3.org/community/"
         }
     ],
-    "repositories": {
-        "local_packages": {
-            "type": "path",
-            "url": "local_packages/*"
+    "require": {
+        "php": ">=8.3.0",
+        "typo3/cms-backend": "^13.4",
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-filelist": "^13.4",
+        "typo3/cms-form": "^13.4",
+        "typo3/cms-frontend": "^13.4",
+        "typo3/cms-indexed-search": "^13.4",
+        "typo3/cms-rte-ckeditor": "^13.4"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.75",
+        "typo3/cms-belog": "^13.4",
+        "typo3/cms-impexp": "^13.4",
+        "typo3/cms-info": "^13.4",
+        "typo3/cms-install": "^13.4",
+        "typo3/cms-lowlevel": "^13.4",
+        "typo3/cms-tstemplate": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "TYPO3Incubator\\ThemeFCBigfoot\\": "Classes/"
         }
     },
     "config": {
-        "bin-dir": "bin",
-        "platform": {
-            "php": "8.2.0"
-        },
-        "sort-packages": true,
         "allow-plugins": {
             "typo3/class-alias-loader": true,
             "typo3/cms-composer-installers": true
+        },
+        "bin-dir": ".build/bin",
+        "sort-packages": true,
+        "vendor-dir": ".build/vendor"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "fcbigfoot",
+            "web-dir": ".build/public"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "php": "^8.2",
-        "surfcamp-team4/football": "@dev",
-        "typo3/cms-backend": "dev-main",
-        "typo3/cms-belog": "dev-main",
-        "typo3/cms-beuser": "dev-main",
-        "typo3/cms-core": "dev-main",
-        "typo3/cms-dashboard": "dev-main",
-        "typo3/cms-extbase": "dev-main",
-        "typo3/cms-extensionmanager": "dev-main",
-        "typo3/cms-filelist": "dev-main",
-        "typo3/cms-filemetadata": "dev-main",
-        "typo3/cms-fluid": "dev-main",
-        "typo3/cms-form": "dev-main",
-        "typo3/cms-frontend": "dev-main",
-        "typo3/cms-indexed-search": "dev-main",
-        "typo3/cms-info": "dev-main",
-        "typo3/cms-install": "dev-main",
-        "typo3/cms-lowlevel": "dev-main",
-        "typo3/cms-rte-ckeditor": "dev-main",
-        "typo3/cms-scheduler": "dev-main",
-        "typo3/cms-seo": "dev-main",
-        "typo3/cms-setup": "dev-main",
-        "typo3/cms-tstemplate": "dev-main",
-        "vlucas/phpdotenv": "^5.6"
-    },
-    "require-dev": {
-        "roave/security-advisories": "dev-latest"
-    },
     "scripts": {
+        "cgl": [
+            "php-cs-fixer --diff -v fix"
+        ],
         "npm-install": [
             "npm install"
         ],

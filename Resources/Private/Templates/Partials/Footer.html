@@ -1,0 +1,32 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer__main">
+            <f:if condition="{settings.fcbigfoot.logo}">
+                <f:image src="{settings.fcbigfoot.logo}" width="300"/>
+            </f:if>
+            <div class="footer--menu-container">
+                <f:render partial="FooterMenu" arguments="{_all}"/>
+                <f:if condition="{settings.fcbigfoot.pages.privacy}">
+                    <li class="footer-menu--item">
+                        <f:link.typolink parameter="{settings.fcbigfoot.pages.privacy}" class="footer-menu--link"></f:link.typolink>
+                    </li>
+                </f:if>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <f:if condition="{settings.fcbigfoot.copyright}">
+                &copy; {f:format.date(date: 'now', format: 'Y')} {settings.fcbigfoot.copyright}
+            </f:if>
+            <div class="footer--icons">
+                <f:for each="{settings.fcbigfoot.socialmedia.channels}" as="channel" key="channelIdentifier">
+                    <f:if condition="{channel.link}">
+                        <f:link.external class="footer--icon" uri="{channel.link}" target="_blank">
+                            <span class="footer--icon-icon icon-{channelIdentifier}" aria-hidden="true"></span>
+                            <span class="footer--icon-label">{f:translate(key: 'socialmedia.{channelIdentifier}.label', extensionName: 'fcbigfoot')}</span>
+                        </f:link.external>
+                    </f:if>
+                </f:for>
+            </div>
+        </div>
+    </div>
+</footer>
