@@ -47,6 +47,9 @@
         "typo3/cms": {
             "extension-key": "fcbigfoot",
             "web-dir": ".build/public"
+        },
+        "branch-alias": {
+            "dev-main": "0.0.x-dev"
         }
     },
     "scripts": {
