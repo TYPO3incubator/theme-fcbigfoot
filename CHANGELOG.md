@@ -1,3 +1,15 @@
+# 0.0.2
+
+## TASK
+
+- ebd6b37 [TASK] Change loading order of template paths
+- 1e8b42a [TASK] Remove unsetting of lib.content element
+- 2176d46 [TASK] Drop limitation for tt_content
+
+## Contributors
+
+- Benjamin Kott
+
 # 0.0.1
 
 ## FEATURE
