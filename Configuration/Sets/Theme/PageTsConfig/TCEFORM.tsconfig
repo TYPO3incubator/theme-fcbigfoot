@@ -3,8 +3,6 @@ TCEFORM {
         doktype.removeItems = 6
     }
     tt_content {
-        CType.keepItems = game_results, textpic, cta,hero, sponsors, form_formframework, teaser_group, news_teaser, indexedsearch_pi2, persons_overview
-
         header_layout {
             default = 2
             keepItems = 2,3,4,100
