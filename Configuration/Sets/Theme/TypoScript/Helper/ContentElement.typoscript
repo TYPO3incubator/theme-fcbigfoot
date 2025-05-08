@@ -3,12 +3,12 @@ lib.contentElement = FLUIDTEMPLATE
 lib.contentElement {
   templateName = Default
   templateRootPaths {
-    0 = EXT:fcbigfoot/Resources/Private/Templates/ContentElements
+    -20 = EXT:fcbigfoot/Resources/Private/Templates/ContentElements
   }
   partialRootPaths {
-    0 = EXT:fcbigfoot/Resources/Private/Templates/ContentElements/Partials
+    -20 = EXT:fcbigfoot/Resources/Private/Templates/ContentElements/Partials
   }
   layoutRootPaths {
-    0 = EXT:fcbigfoot/Resources/Private/Templates/ContentElements/Layouts
+    -20 = EXT:fcbigfoot/Resources/Private/Templates/ContentElements/Layouts
   }
 }
