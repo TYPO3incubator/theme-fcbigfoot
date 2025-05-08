@@ -1,5 +1,4 @@
 # Default configuration for content elements which are using FLUIDTEMPLATE directly
-lib.contentElement >
 lib.contentElement = FLUIDTEMPLATE
 lib.contentElement {
   templateName = Default
